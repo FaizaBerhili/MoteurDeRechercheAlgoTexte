@@ -1,1 +1,1 @@
-# MoteurDeRechercheAlgoTexte
+# Projet MoteurDeRechercheAlgoTexte
