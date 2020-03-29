@@ -1,0 +1,222 @@
+   <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+        <TITLE>RDOS - Random Discrete Objects Suite</TITLE>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <LINK rel="Stylesheet" type="text/css" href="css/tex4ht.css">
+        <LINK rel="Stylesheet" type="text/css" href="css/bioinfo.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+
+		<link type="text/css" rel="stylesheet" href="js/jQueryUI/css/smoothness/jquery-ui-1.10.3.custom.min.css" />
+        <script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>
+        <script type='text/javascript' src='js/autosize.js'></script>
+		<script type="text/javascript" src="js/jQueryUI/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+		<script>
+			$(function() {
+				$( document ).tooltip();
+			});
+		</script>
+        <STYLE type="text/css"><!--
+           #menuElement
+           {
+             border-left:5px solid #65944A;
+             color:#65944A;
+             padding:0.3em 0 0.3em 10px;
+             border-top:1px dashed #D4D4D4;
+           }
+           #menuElementnewgen div
+           {
+             display: block;
+           }
+        --></STYLE>
+    </HEAD>
+<BODY class="mainBackground">
+  <div id="mainContainer">
+  <div class="shadow">
+  <div id="mainContent">
+    <div id="mainHeader">
+      <div id="photo">
+      <a href="."><img src="pics/rdosByAndrea.png" alt="(E)RDOS by Andrea Sportiello" title="RDOS by Andrea Sportiello" id="rdosLogo"></a>
+      </div>
+      <div id="lang">
+        <a href="index.php?lang=fr&amp;page=newgen&amp;generator=5"><img src="pics/flagfr.png" alt="French version"></a> <a href="index.php?page=newgen&amp;generator=5"><img src="pics/flagen.png" alt="English version"></a>
+      </div>
+      <div id="mainTitle">
+        RDOS - Random Discrete Objects Suite
+      </div>
+      <div class="filler"></div>
+    </div>
+    <div id="sidebar">
+      <div class="shadow">
+      <div id="menu">
+        <h1>Menu</h1>
+          <div>
+          <div onclick="location.href='index.php?lang=fr&amp;generator=5';" onmouseover="this.style.cursor='pointer';" class="menuElement" id="menuElementhome">
+            <a href="index.php?lang=fr&amp;generator=5" title="Accueil">
+              <span >
+                Accueil
+              </span >
+            </a>
+          </div>
+          </div>
+          <div>
+          <div onclick="location.href='index.php?lang=fr&amp;page=search&amp;generator=5';" onmouseover="this.style.cursor='pointer';" class="menuElement" id="menuElementsearch">
+            <a href="index.php?lang=fr&amp;page=search&amp;generator=5" title="Générateurs">
+              <span >
+                Générateurs
+              </span >
+            </a>
+          </div>
+          </div>
+          <div>
+          <div onclick="location.href='index.php?lang=fr&amp;page=links&amp;generator=5';" onmouseover="this.style.cursor='pointer';" class="menuElement" id="menuElementlinks">
+            <a href="index.php?lang=fr&amp;page=links&amp;generator=5" title="Liens">
+              <span >
+                Liens
+              </span >
+            </a>
+          </div>
+          </div>
+          <div>
+          <div onclick="location.href='index.php?lang=fr&amp;page=about&amp;generator=5';" onmouseover="this.style.cursor='pointer';" class="menuElement" id="menuElementabout">
+            <a href="index.php?lang=fr&amp;page=about&amp;generator=5" title="A propos/Contacts">
+              <span >
+                A propos/Contacts
+              </span >
+            </a>
+          </div>
+          </div>
+      </div>
+      </div>
+      <div class="shadow">
+      <div id="news">
+      <h1>News</h1>
+        <div class="newsElement">
+          <a href="http://lipn.fr/rdos/index.php?page=tool&generator=9">
+          <span class="newsDate">
+            2017-04-02
+          </span>-<span class="newsTitle">
+             NFAGenerator en ligne
+          </span></a>
+          <div class="newsContent" id="news5">
+            Mise en ligne d'un outil de génération aléatoire d'automates non déterministes
+          </div>
+        </div>
+        <div class="newsElement">
+          <a href="index.php?lang=fr&generator=5">
+          <span class="newsDate">
+            2017-03-31
+          </span>-<span class="newsTitle">
+             Arbogen en ligne
+          </span></a>
+          <div class="newsContent" id="news4">
+            Mise en ligne d'un outil de génération aléatoire d'arbres utilisant la méthode de Boltzmann
+          </div>
+        </div>
+        <div class="newsElement">
+          <a href="index.php?lang=fr&generator=5">
+          <span class="newsDate">
+            2013-06-13
+          </span>-<span class="newsTitle">
+             Présentation à MAGNUM
+          </span></a>
+          <div class="newsContent" id="news3">
+            Première présentation de RDOS lors d'une réunion du projet ANR MAGNUM.
+          </div>
+        </div>
+        <div class="newsElement">
+          <a href="index.php?lang=fr&generator=5">
+          <span class="newsDate">
+            2013-06-05
+          </span>-<span class="newsTitle">
+             Visualisation des objets
+          </span></a>
+          <div class="newsContent" id="news2">
+            Quelques uns des objets engendrés peuvent maintenant être visualisés grâce à la <a href="http://d3js.org/">librairie D3.js</a>.
+          </div>
+        </div>
+        <div class="newsElement">
+          <a href="index.php?lang=fr&generator=5">
+          <span class="newsDate">
+            2013-04-05
+          </span>-<span class="newsTitle">
+             RDOS en ligne !
+          </span></a>
+          <div class="newsContent" id="news1">
+            Mise en ligne d'une version préliminaire du serveur RDOS
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="contentContainer">
+      <div class="shadow">
+      <div id="content">
+        <div class="contentTitle">Proposer un nouveau générateur</div>
+<p>
+  Nous sommes ouvert à l'inclusion, au sein d'RDOS, de tout nouveau générateur satisfaisant les <b>prérequis ci-dessous</b>:
+  </p>
+   <ul>
+   <li><b>Une ligne par objet dans les fichiers de sortie.</b>
+   Tout générateur doit engendrer un fichier, où chaque objet engendré est indiqué sur une ligne unique. Cette restriction est la seule imposée sur le format de sortie des générateurs, et nous permet de faire face à la diversité de formats.
+   <li><b>Pas de dépendance envers des logiciels tiers payants.</b>
+   En l'absence d'une meilleure compréhension des implications légales, nous ne pouvons pas offrir à nos invités une utilisation (même indirecte) d'un logiciel tiers payant. Pour cette raison, nous n'acceptons pas actuellement de générateur requèrant un tel logiciel tiers lors de son exécution.
+   </ul>
+<p>
+  Si votre générateur satisfait ces conditions, et que vous souhaitez le voir inclus dans RDOS, veuillez transmettre :
+</p>
+   <ul>
+   <li>le code source de votre générateur,
+   <li>une version complétée de <a href="configData.xml">ce fichier XML de configuration, documentant l'utilisation et les paramètres de votre logiciel</a>
+   </ul>
+<p>
+   à <span id="emailAddress"><span style="border:1pt solid #606060;">Please activate javascript to see these email addresses</span></span>.
+</p>
+    <script type='text/javascript'>
+      <!--
+      var pre = 'mai';
+      var a = new Array();
+      a.push('Yann');
+      a.push('Ponty@lix');
+      pre += 'lto';
+      a.push('polytechnique');
+      a.push('fr');
+      var b = a.join('.');
+      $("#emailAddress").empty().append('<a href=\'' + pre + ':' + b + '\'>' + b + '<\/a>');
+      //-->
+    </script>
+    <script type='text/javascript'>
+      <!--
+      var pre = 'mai';
+      var a = new Array();
+      a.push('Julien');
+      a.push('David@lipn');
+      pre += 'lto';
+      a.push('univ-paris13');
+      a.push('fr');
+      var b = a.join('.');
+	  $("#emailAddress").append(" ou ");
+      $("#emailAddress").append('<a href=\'' + pre + ':' + b + '\'>' + b + '<\/a>');
+      //-->
+    </script>
+
+
+
+
+      </div>
+      </div>
+    </div>
+    <div id="mainFooter">
+      Website Copyleft Yann Ponty &amp; Julien David 2014
+    </div>
+  </div>
+  </div>
+  </div>
+</BODY>
+</HTML>
+
+
+ 
