@@ -5,7 +5,7 @@
 
 #Importation des bibliothèques utiles
 import inverted_index_test as ii
-import cleaner
+import cleaner_test as cleaner
 
 #Main
 if __name__ == '__main__':
