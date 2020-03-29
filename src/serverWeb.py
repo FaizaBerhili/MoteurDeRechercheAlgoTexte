@@ -2,29 +2,29 @@
 
 #coding:utf-8
 
-#Importation des binliothèques nécessaires
+#Importation des bibliotheques necessaires
 import http.server
  
-#Définition du port d'écoute
+#Definition du port d'écoute
 port = 8889
 
-#Définition d'un adresse auquelle on se connecte
+#Definition d'un adresse auquelle on se connecte
 serverAddress = ("localhost", port)
 
-#Démarrer le serveur
+#Demarrer le serveur
 server = http.server.HTTPServer
 
-#Mettre en place un gestionnaire pour la gestion des requêtes http fonctionnant avec CGI
+#Mettre en place un gestionnaire pour la gestion des requetes http fonctionnant avec CGI
 handler = http.server.CGIHTTPRequestHandler
 
-#Indiquer où chercher les scripts à éxécuter, ici à la racine du repertoire
+#Indiquer ou chercher les scripts a executer, ici à la racine du repertoire
 handler.cgi_directories = ["/"]
 
-#On exécute le serveur 
+#On execute le serveur 
 httpd = server(serverAddress,handler)
 
-#Message de vérification
+#Message de verification
 print("Serveur actif sur le port :", port)
 
-#On dessert le serveur pour qu'il toune en boucle, juqu'à l'interruption manuelle 
+#On dessert le serveur pour qu'il toune en boucle, jusqu'a l'interruption manuelle 
 httpd.serve_forever()
