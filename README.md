@@ -9,5 +9,5 @@ pip install textdistance
 (ou)
 
 pip3 install bs4  
-pip3 install unidecode
+pip3 install unidecode  
 pip3 install textdistance
