@@ -28,7 +28,7 @@ print(t)
 print("similarite cosinus entre : \"" + str1 + "\" et \"" + str2+"\"")
 
 
-print cd.get_result(str1,str2) 
+print (cd.get_result(str1,str2) )
 
 
 
