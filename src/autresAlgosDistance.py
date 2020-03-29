@@ -23,51 +23,51 @@ print(texte1)
 print(texte2)
 
 
-print
+print()
 
 print("DamerauLevenshtein")
 
 
-print textdistance.damerau_levenshtein.distance(texte1,texte2)
-print textdistance.damerau_levenshtein.similarity(texte1,texte2)
+print (textdistance.damerau_levenshtein.distance(texte1,texte2))
+print( textdistance.damerau_levenshtein.similarity(texte1,texte2))
 
-print
+print()
 print("JaroWinkler")
 
 
-print textdistance.jaro_winkler.distance(texte1,texte2)
-print textdistance.jaro_winkler.similarity(texte1,texte2)
+print( textdistance.jaro_winkler.distance(texte1,texte2))
+print (textdistance.jaro_winkler.similarity(texte1,texte2))
 
-print
+print()
 
 print("StrCmp95")
 
 
-print textdistance.strcmp95.distance(texte1,texte2)
-print textdistance.strcmp95.similarity(texte1,texte2)
+print( textdistance.strcmp95.distance(texte1,texte2))
+print( textdistance.strcmp95.similarity(texte1,texte2))
 
-print
+print()
 
 print("NeedlemanWunsch")
 
 
-print textdistance.needleman_wunsch.distance(texte1,texte2)
-print textdistance.needleman_wunsch.similarity(texte1,texte2)
+print( textdistance.needleman_wunsch.distance(texte1,texte2))
+print( textdistance.needleman_wunsch.similarity(texte1,texte2))
 
-print
+print()
 
 print("Gotoh")
 
 
-print textdistance.gotoh.distance(texte1,texte2)
-print textdistance.gotoh.similarity(texte1,texte2)
+print( textdistance.gotoh.distance(texte1,texte2))
+print (textdistance.gotoh.similarity(texte1,texte2))
 
-print
+print()
 print("SmithWaterman")
 
 
-print textdistance.smith_waterman.distance(texte1,texte2)
-print textdistance.smith_waterman.similarity(texte1,texte2)
+print( textdistance.smith_waterman.distance(texte1,texte2))
+print (textdistance.smith_waterman.similarity(texte1,texte2))
 
 
 
