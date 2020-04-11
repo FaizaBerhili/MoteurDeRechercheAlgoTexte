@@ -29,7 +29,9 @@ print("DamerauLevenshtein")
 
 
 print (textdistance.damerau_levenshtein.distance(texte1,texte2))
+
 print( textdistance.damerau_levenshtein.similarity(texte1,texte2))
+
 
 print()
 print("JaroWinkler")
@@ -52,7 +54,9 @@ print("NeedlemanWunsch")
 
 
 print( textdistance.needleman_wunsch.distance(texte1,texte2))
+
 print( textdistance.needleman_wunsch.similarity(texte1,texte2))
+
 
 print()
 
