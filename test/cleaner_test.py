@@ -66,6 +66,9 @@ def cleaner_link(link):
         content = " ".join("".join([" " if ch in string.punctuation else ch for ch in content]).split()) 
         content = content.replace("’"," ")
         content = content.replace("–", " ")
+        
+        #Mettre le texte en minuscule
+        content = content.lower()
 
         #print(content)
 
