@@ -30,14 +30,10 @@ class inverted_index:
 
     #Fonction d'ajout du contenu d'un fichier spliter dans l'index inversé
     def add(self, file_name, file_content):
-        for word in self.format_file_content(file_content,self.stop_words):
+        content_clean = self.format_file_content(file_content,self.stop_words)
+        for word in content_clean:
             files = self.index.setdefault(word,set())
             files.add(file_name)
-
-    #Fonction de recherche
-    def search(self, request):
-        #A compléter pour la prochaine tache
-        return None
 
     #Fonction permettant de formater les documents 
     def format_file_content(self,file_content, stop_words):

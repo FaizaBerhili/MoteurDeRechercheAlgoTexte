@@ -20,4 +20,5 @@ if __name__ == '__main__':
     index_inverse.build(documents_cleaner)
     #On affiche l'index inversé
     index_inverse.display()
+
  
