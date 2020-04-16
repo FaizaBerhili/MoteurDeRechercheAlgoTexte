@@ -30,7 +30,7 @@ def convert_url(urls):
 def cleaner_link(link):
     try:
         #Lecture du fichier
-        f = codecs.open("./pages_web_test/"+link, "r",encoding="UTF-8")
+        f = codecs.open("./pages_web/"+link, "r",encoding="UTF-8")
         content = f.read()
 
         #On supprime les balises script et style ainsi que leurs contenus
@@ -66,7 +66,7 @@ def cleaner_link(link):
         content = " ".join("".join([" " if ch in string.punctuation else ch for ch in content]).split()) 
         content = content.replace("’"," ")
         content = content.replace("–", " ")
-        
+
         #Mettre le texte en minuscule
         content = content.lower()
 
