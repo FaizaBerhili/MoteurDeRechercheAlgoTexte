@@ -23,7 +23,7 @@ if __name__ == '__main__':
     #On remplit l'index inversé avec les documents fournis
     index_inverse.build(documents_cleaner)
     #On affiche l'index inversé
-    #index_inverse.display()
+    index_inverse.display()
     #Effectuer une recherche
     #print(index_inverse.search(["Université","Paris","13"]))
     index_inverse.search(["Université","Paris","13"])
