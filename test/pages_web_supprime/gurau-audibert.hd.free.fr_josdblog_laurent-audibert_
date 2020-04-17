@@ -1,0 +1,422 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 lt-ie9 lt-ie8 lt-ie7" lang="fr-FR"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 lt-ie9 lt-ie8" lang="fr-FR"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 lt-ie9" lang="fr-FR"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr-FR"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<title>Laurent Audibert &raquo; josDBlog</title>
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="http://gurau-audibert.hd.free.fr/josdblog/xmlrpc.php" />
+		<style type="text/css"> #wrapper { max-width: 1024px !important;} </style>
+		<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="josDBlog &raquo; Flux" href="http://gurau-audibert.hd.free.fr/josdblog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="josDBlog &raquo; Flux des commentaires" href="http://gurau-audibert.hd.free.fr/josdblog/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/gurau-audibert.hd.free.fr\/josdblog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='brunelleschi_center-navigation-css'  href='http://gurau-audibert.hd.free.fr/josdblog/wp-content/themes/brunelleschi/css/center-navigation.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style.css-css'  href='http://gurau-audibert.hd.free.fr/josdblog/wp-content/themes/brunelleschi-child/style.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://gurau-audibert.hd.free.fr/josdblog/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css'  href='http://gurau-audibert.hd.free.fr/josdblog/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='http://gurau-audibert.hd.free.fr/josdblog/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-content/themes/brunelleschi/js/modernizr-2.5.2.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-content/themes/brunelleschi/js/respond.js?ver=5.3.2'></script>
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-content/themes/brunelleschi/js/brunelleschi-scripts.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"http:\/\/gurau-audibert.hd.free.fr\/josdblog\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":"607","token":"f043ca9318","debug":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-content/plugins/wordpress-popular-posts/assets/js/wpp-5.0.0.min.js?ver=5.0.2'></script>
+<link rel='https://api.w.org/' href='http://gurau-audibert.hd.free.fr/josdblog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://gurau-audibert.hd.free.fr/josdblog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://gurau-audibert.hd.free.fr/josdblog/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel="canonical" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/" />
+<link rel='shortlink' href='http://gurau-audibert.hd.free.fr/josdblog/?p=607' />
+<link rel="alternate" type="application/json+oembed" href="http://gurau-audibert.hd.free.fr/josdblog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgurau-audibert.hd.free.fr%2Fjosdblog%2Flaurent-audibert%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://gurau-audibert.hd.free.fr/josdblog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgurau-audibert.hd.free.fr%2Fjosdblog%2Flaurent-audibert%2F&#038;format=xml" />
+<!-- All in one Favicon 4.7 --><link rel="shortcut icon" href="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2014/04/favicon4.ico" />
+	<style type="text/css">
+			.site-title,
+		.site-description {
+			position: absolute !important;
+			clip: rect(1px 1px 1px 1px); /* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #353540; }
+</style>
+	<link rel="icon" href="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2015/08/cropped-josdblog2-150x150.png" sizes="32x32" />
+<link rel="icon" href="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2015/08/cropped-josdblog2-200x200.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2015/08/cropped-josdblog2-200x200.png" />
+<meta name="msapplication-TileImage" content="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2015/08/cropped-josdblog2-300x300.png" />
+		<style></style>
+	</head>
+	<body class="page-template page-template-onecolumn-page page-template-onecolumn-page-php page page-id-607 page-parent custom-background">
+	<div id="wrapper" class="hfeed container">
+		<header id="header" class="row clearfix">
+							<hgroup id="branding" class="twelvecol last">
+					<h1 class="site-title"><a href="http://gurau-audibert.hd.free.fr/josdblog/" title="josDBlog" rel="home">josDBlog</a></h1>
+					<h2 class="site-description">le blog de Laurent (Informatique, Domotique&#8230;)</h2>
+				</hgroup>
+																					<a href="http://gurau-audibert.hd.free.fr/josdblog/" class="twelvecol lastlast" title="josDBlog" rel="home">
+						<img src="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/josdblog_1024x198.png" alt="" id="headerimg" />
+					</a>
+					
+													<div id="access" role="navigation" class="twelvecol last clearfix">
+					<div class="skip-link screen-reader-text"><a href="#content" title="Aller au contenu">Aller au contenu</a></div>
+					<div class="menu-header"><ul id="menu-menu-principal" class="menu"><li id="menu-item-609" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-607 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-609"><a title="Ma page professionnelle (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/" aria-current="page">Enseignement</a>
+<ul class="sub-menu">
+	<li id="menu-item-994" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-607 current_page_item menu-item-994"><a title="Ma page professionnelle (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/" aria-current="page">Page professionnelle</a></li>
+	<li id="menu-item-995" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-995"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/livres/">Livres (BD et UML)</a></li>
+	<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a title="Détail de mes enseignements (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/enseignements/">Enseignements</a></li>
+	<li id="menu-item-895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-895"><a title="Responsabilités volet enseignement (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/responsabilites-volet-enseignement/">Responsabilités (enseignement)</a></li>
+	<li id="menu-item-6129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6129"><a title="DUT Informatique en Alternance (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/dut-informatique-en-alternance-iut-villetaneuse-2014-2015/">DUT Informatique en Alternance</a></li>
+	<li id="menu-item-238" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-238"><a title="Billets concernant mes cours" href="http://gurau-audibert.hd.free.fr/josdblog/category/cours/">Billets Cours</a></li>
+</ul>
+</li>
+<li id="menu-item-1834" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-607 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1834"><a title="Ma page professionnelle (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/" aria-current="page">Recherche</a>
+<ul class="sub-menu">
+	<li id="menu-item-1478" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-607 current_page_item menu-item-1478"><a title="Ma page professionnelle (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/" aria-current="page">Page professionnelle</a></li>
+	<li id="menu-item-935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a title="Mes encadrements et participations à des projets (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/encadrements-et-projets/">Encadrements et projets</a></li>
+	<li id="menu-item-960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-960"><a title="Responsabilités volet recherche (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/responsabilites-volet-recherche/">Responsabilités (recherche)</a></li>
+	<li id="menu-item-961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-961"><a title="Liste de mes publications sur HAL" href="http://hal.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=laurent,audibert&#038;typdoc=%28%27ART_ACL%27,%27ART_SCL%27,%27COMM_ACT%27,%27COMM_SACT%27,%27CONF_INV%27,%27COURS%27,%27COVS%27,%27DOUV%27,%27HDR%27,%27MEM%27,%27OTHER%27,%27OUVS%27,%27PATENT%27,%27REPORT%27,%27THESE%27,%27UNDEFINED%27,%27ART_VULG%27,%27PRES_CONF%27%29&#038;CB_auteur=oui&#038;CB_titre=oui&#038;CB_article=oui&#038;langue=Francais&#038;tri_exp=annee_publi&#038;tri_exp2=typdoc&#038;tri_exp3=date_publi&#038;ordre_aff=TA&#038;Fen=Aff&#038;css=../css/VisuRubriqueEncadre.css">Publications</a></li>
+	<li id="menu-item-1230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1230"><a title="Billets concernant ma recherche" href="http://gurau-audibert.hd.free.fr/josdblog/category/recherche/">Billets Recherche</a></li>
+	<li id="menu-item-1231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1231"><a title="Billets concernant le TALN" href="http://gurau-audibert.hd.free.fr/josdblog/category/recherche/taln/">Billets TALN</a></li>
+	<li id="menu-item-1835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1835"><a title="Sommaire UIMA sur ce blog (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/sommaire-uima/">UIMA &#8211; Sommaire</a></li>
+	<li id="menu-item-810" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-810"><a title="Billets concernant UIMA" href="http://gurau-audibert.hd.free.fr/josdblog/category/recherche/uima/">UIMA &#8211; Billets</a></li>
+</ul>
+</li>
+<li id="menu-item-4713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4713"><a href="http://gurau-audibert.hd.free.fr/josdblog/domotique/">Domotique</a>
+<ul class="sub-menu">
+	<li id="menu-item-5220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5220"><a title="Sommaire Domotique sur ce blog (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/domotique/">Sommaire</a></li>
+	<li id="menu-item-4154" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4154"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/domotique/controleurs/">Contrôleurs</a></li>
+	<li id="menu-item-4155" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4155"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/domotique/tutoriels/">Tutoriels</a></li>
+	<li id="menu-item-4156" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4156"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/domotique/surveillance/">Surveillance</a></li>
+	<li id="menu-item-4157" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4157"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/domotique/modules/">Modules</a></li>
+</ul>
+</li>
+<li id="menu-item-3183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3183"><a title="Billets concernant Linux" href="http://gurau-audibert.hd.free.fr/josdblog/category/linux/">Linux</a>
+<ul class="sub-menu">
+	<li id="menu-item-3184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3184"><a title="Billets concernant des applications sous Linux" href="http://gurau-audibert.hd.free.fr/josdblog/category/linux/applications/">Applications</a></li>
+	<li id="menu-item-453" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-453"><a title="Billets concernant les commandes sous Linux" href="http://gurau-audibert.hd.free.fr/josdblog/category/linux/commandes/">Commandes</a></li>
+</ul>
+</li>
+<li id="menu-item-240" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-240"><a title="Billets concernant les Logiciels" href="http://gurau-audibert.hd.free.fr/josdblog/category/logiciels/">Logiciels</a>
+<ul class="sub-menu">
+	<li id="menu-item-1162" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1162"><a title="Billets concernant mes applications/extensions/modules préférés" href="http://gurau-audibert.hd.free.fr/josdblog/category/logiciels/indispensable/">Indispensable</a></li>
+	<li id="menu-item-811" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-811"><a title="Billets concernant LaTeX" href="http://gurau-audibert.hd.free.fr/josdblog/category/logiciels/latex/">LaTeX</a></li>
+	<li id="menu-item-812" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-812"><a title="Billets concernant Wordpress" href="http://gurau-audibert.hd.free.fr/josdblog/category/logiciels/wordpress/">WordPress</a></li>
+	<li id="menu-item-1232" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1232"><a title="Billets concernant Android" href="http://gurau-audibert.hd.free.fr/josdblog/category/logiciels/android/">Android</a></li>
+</ul>
+</li>
+<li id="menu-item-241" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-241"><a title="Billets concernant le Matériel" href="http://gurau-audibert.hd.free.fr/josdblog/category/materiel/">Matériel</a>
+<ul class="sub-menu">
+	<li id="menu-item-2101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2101"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/materiel/cablage-de-prises/">Cablage</a></li>
+	<li id="menu-item-456" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-456"><a title="Billets concernant les NAS Synology" href="http://gurau-audibert.hd.free.fr/josdblog/category/materiel/synology/">Synology</a></li>
+	<li id="menu-item-813" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-813"><a title="Billets concernant Free" href="http://gurau-audibert.hd.free.fr/josdblog/category/materiel/freebox/">FreeBox</a></li>
+	<li id="menu-item-4159" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4159"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/materiel/dlink/">DLink</a></li>
+</ul>
+</li>
+<li id="menu-item-3181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3181"><a title="Sommaire des billets concernant la location d&rsquo;un appartement (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/gerer-soi-meme-son-logement-locatif/">Location</a>
+<ul class="sub-menu">
+	<li id="menu-item-2827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2827"><a title="Sommaire des billets concernant la location d&rsquo;un appartement (Page statique)" href="http://gurau-audibert.hd.free.fr/josdblog/gerer-soi-meme-son-logement-locatif/">Sommaire</a></li>
+	<li id="menu-item-3182" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3182"><a title="Billets concernant la location d&rsquo;un appartement" href="http://gurau-audibert.hd.free.fr/josdblog/category/divers/location/">Billets</a></li>
+	<li id="menu-item-3185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3185"><a title="Billets concernant le bail" href="http://gurau-audibert.hd.free.fr/josdblog/tag/bail/">Bail</a></li>
+	<li id="menu-item-3186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3186"><a title="Billets concernant les impôts" href="http://gurau-audibert.hd.free.fr/josdblog/tag/impots/">Impôts</a></li>
+</ul>
+</li>
+<li id="menu-item-2103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2103"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/divers/">Divers</a>
+<ul class="sub-menu">
+	<li id="menu-item-455" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-455"><a title="Billets difficiles à classer" href="http://gurau-audibert.hd.free.fr/josdblog/category/divers/reflexions/">Réflexions</a></li>
+	<li id="menu-item-2246" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2246"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/divers/bricolage/">Bricolage</a></li>
+	<li id="menu-item-2104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2104"><a href="http://gurau-audibert.hd.free.fr/josdblog/category/divers/carto-gps/">Carto &#038; GPS</a></li>
+	<li id="menu-item-454" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-454"><a title="Billets concernant la Photographie et la Vidéo" href="http://gurau-audibert.hd.free.fr/josdblog/category/divers/photo_video/">Photo &#038; Vidéo</a></li>
+</ul>
+</li>
+</ul></div>				</div><!-- #access -->
+					</header><!-- #header -->
+		<div id="container" class="row clearfix">
+		<div id="main" class="one-column twelvecol last" role="main">
+
+			
+				<article id="post-607" class="post-607 page type-page status-publish hentry">
+					<header>
+											<h1 class="entry-title">Laurent Audibert</h1>
+										</header>
+
+					<div class="entry-content">
+						<a href="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/photoid_laurent.jpg"><img src="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/photoid_laurent.jpg" alt="Laurent Audibert" title="Laurent Audibert" width="178" height="220" class="alignright size-full wp-image-585" srcset="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/photoid_laurent.jpg 178w, http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/photoid_laurent-121x150.jpg 121w, http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/photoid_laurent-162x200.jpg 162w" sizes="(max-width: 178px) 100vw, 178px" /></a>
+<div class="LoVeryBig">
+<p>
+Docteur en informatique<br />
+Ingénieur en Génie Informatique &#038; Industriel<br />
+Maître de Conférences à l&rsquo;IUT Villetaneuse
+</p>
+</div>
+<div class="LoBig">
+<p>
+J&rsquo;effectue ma recherche au sein de l&rsquo;équipe<br />
+Représentation des Connaissances et Langage Naturel (<a href="http://www-lipn.univ-paris13.fr/RCLN/" title="Equipe RCLN">RCLN</a>)<br />
+du Laboratoire d&rsquo;Informatique de Paris-Nord (<a href="http://www-lipn.univ-paris13.fr/" title="Laboratoire LIPN">LIPN</a>)
+</p>
+</div>
+<div class="LoSmall">
+<p>
+Laboratoire d&rsquo;Informatique de Paris-Nord UMR CNRS 7030<br />
+Institut Galilée &#8211; Université Paris-Nord<br />
+99, avenue Jean-Baptiste Clément<br />
+93430 Villetaneuse, France
+</p>
+</div>
+
+<h2>À propos de josDBlog</h2>
+<div style="text-align: justify;">
+<p>
+Ce blog rassemble des pages et des billets liés à mon activité professionnelle (que ce soit concernant l&rsquo;enseignement ou la recherche), ainsi que des pages et des billets liés à mes activités ou réflexions personnelles. Une navigation utilisant les trois premiers menus du bandeau supérieur <i>Enseignement</i>, <i>Recherche</i> et <i>UIMA</i> permet de rester sur la partie strictement professionnelle de ce blog.
+</p>
+
+</div>
+
+<img src="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/recherche-e1363105602414-200x200.png" alt="recherche" width="200" height="200" class="alignright size-200PX wp-image-2626" srcset="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/recherche-e1363105602414-200x200.png 200w, http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/recherche-e1363105602414-150x150.png 150w, http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/recherche-e1363105602414.png 300w" sizes="(max-width: 200px) 100vw, 200px" />
+<h2>Recherche</h2>
+<h3>Mes activités de recherche</h3>
+<div style="text-align: justify;">
+<p>
+Mon premier pas dans le domaine de la recherche s&rsquo;est fait dans le cadre de mon stage de fin d&rsquo;études d&rsquo;école d&rsquo;ingénieur (INSA de Toulouse) en travaillant sur un problème de <em>détection automatique de pièces manufacturières sur un convoyeur de minerai</em>. Il s&rsquo;agissait de détecter des pièces particulières en filmant l&rsquo;intersection d&rsquo;un plan laser incliné avec le minerai afin d&rsquo;extraire et d&rsquo;analyser les caractéristiques 3D des différents objets.
+</p>
+<p>
+J&rsquo;ai ensuite réalisé mon stage de DEA dans le domaine des logiques non monotones où j&rsquo;ai présenté comment l&rsquo;information non-monotone d&rsquo;une classe de base peut être enrichie par l&rsquo;information non-monotone de ses classes de référence.
+</p>
+<p>
+Plus tard, j&rsquo;ai poursuivi une activité de recherche dans le cadre de mon doctorat intitulé <em>Outils d&rsquo;exploration de corpus et désambiguïsation lexicale automatique</em>. Il s&rsquo;agissait d&rsquo;un problème de la désambiguïsation lexicale automatique utilisant des techniques d&rsquo;apprentissage supervisé. L&rsquo;une des contributions de ce travail était la présentation d&rsquo;une étude systématique, rigoureuse et approfondie des critères pour la désambiguïsation lexicale.
+</p>
+<p>
+Lors de mon recrutement au LIPN dans l&rsquo;équipe RCLN, j&rsquo;ai dans un premier temps continué à travailler dans la trajectoire de mon doctorat. <strong>Je travaille maintenant sur des problématiques d&rsquo;annotation de corpus au regard d&rsquo;une ressource quelconque et plus particulièrement au regard d&rsquo;une ontologie. Je m&rsquo;intéresse également à la problématique des plate-formes d&rsquo;annotation linguistique.</strong>
+</p>
+</div>
+
+<h3>Outils</h3>
+<ul>
+<li><a href="http://gurau-audibert.hd.free.fr/josdblog/sommaire-uima/" title="Introduction à UIMA">Introduction à UIMA</a></li>
+</ul>
+
+<h3>Publications sur HAL</h3>
+<ul>
+<li><a href="http://hal.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=laurent,audibert&#038;typdoc=%28%27ART_ACL%27,%27ART_SCL%27,%27COMM_ACT%27,%27COMM_SACT%27,%27CONF_INV%27,%27COURS%27,%27COVS%27,%27DOUV%27,%27HDR%27,%27MEM%27,%27OTHER%27,%27OUVS%27,%27PATENT%27,%27REPORT%27,%27THESE%27,%27UNDEFINED%27,%27ART_VULG%27,%27PRES_CONF%27%29&#038;CB_auteur=oui&#038;CB_titre=oui&#038;CB_article=oui&#038;langue=Francais&#038;tri_exp=annee_publi&#038;tri_exp2=typdoc&#038;tri_exp3=date_publi&#038;ordre_aff=TA&#038;Fen=Aff&#038;css=../css/VisuRubriqueEncadre.css" title="Mes Publications">La liste de mes publications sur HAL</a></li>
+</ul>
+
+<h3>Plus de détails</h3>
+<ul>
+<li><a href="/josdblog/laurent-audibert/encadrements-et-projets/" title="Encadrements et projets">Mes encadrements et participations à des projets</a></li>
+<li><a href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/responsabilites-volet-recherche/" title="Responsabilités volet recherche">Le détail de mes responsabilités du côté recherche</a></li>
+</ul>
+
+<h2>Enseignement</h2>
+<img src="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/enseignement-e1363105894595-300x200.jpg" alt="enseignement" width="300" height="200" class="alignright size-300PX wp-image-2625" srcset="http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/enseignement-e1363105894595-300x200.jpg 300w, http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/enseignement-e1363105894595-150x100.jpg 150w, http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/enseignement-e1363105894595.jpg 400w, http://gurau-audibert.hd.free.fr/josdblog/wp-content/uploads/2011/12/enseignement-e1363105894595-200x134.jpg 200w" sizes="(max-width: 300px) 100vw, 300px" />
+<h3>Livres</h3>
+<ul>
+<li><a href="http://gurau-audibert.hd.free.fr/josdblog/2009/11/livre-uml-2-de-lapprentissage-a-la-pratique/" title="Livre : UML 2 – de l’apprentissage à la pratique">UML 2 – de l’apprentissage à la pratique</a></li>
+<li><a href="http://gurau-audibert.hd.free.fr/josdblog/2009/09/livre-bases-de-donnees-de-la-modelisation-au-sql/" title="Livre : Bases de données – de la modélisation au SQL">Bases de données – de la modélisation au SQL</a></li>
+</ul>
+
+<h3>Cours en ligne</h3>
+<ul>
+<li><a href="http://laurent-audibert.developpez.com/Cours-UML/" title="UML 2 sur developpez.com">UML 2</a> sur developpez.com</li>
+<li><a href="http://laurent-audibert.developpez.com/Cours-BD/" title="Base de Données et langage SQL sur developpez.com">Base de Données et langage SQL</a> sur developpez.com</li>
+<li><a href="http://laurent-audibert.developpez.com/Cours-Logique/" title="Logiques du raisonnement valide sur developpez.com">Logiques du raisonnement valide</a> sur developpez.com</li>
+<li><a href="/josdblog/category/cours/" title="Cours en ligne sur ce blog">Cours en ligne sur ce blog</a></li>
+<li><a href="http://gurau-audibert.hd.free.fr/josdblog/tag/projet/" title="Sujets de projets">Les billets concernant mes sujets de projets sur ce blog</a></li>
+</ul>
+
+<h3>Plus de détails</h3>
+<ul>
+<li><a href="/josdblog/laurent-audibert/enseignements/" title="Enseignements">Le détail de mes enseignements</a></li>
+<li><a href="http://gurau-audibert.hd.free.fr/josdblog/laurent-audibert/responsabilites-volet-enseignement/" title="Responsabilités volet enseignement">Le détail de mes responsabilités du côté enseignement</a></li>
+</ul>
+
+
+
+
+																	</div><!-- .entry-content -->
+				</article><!-- #post-## -->
+
+							<div id="comments">
+
+	<p class="nocomments">Les commentaires sont fermés.</p>
+	
+
+
+
+</div><!-- #comments -->
+
+
+		</div><!-- #main -->
+
+			</div><!-- #container -->
+			<footer id="footer" role="contentinfo" class="row">
+				<div id="footerbar" class="twelvecol last">
+									</div><!-- #footerbar -->
+				<div id="colophon" class="twelvecol last">
+					<div id="site-info" class="sixcol">
+						<a href="http://gurau-audibert.hd.free.fr/josdblog/" title="josDBlog" rel="home">
+							josDBlog						</a>
+					</div><!-- #site-info -->
+					<div id="site-generator" class="sixcol last">
+												<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Fièrement propulsé par WordPress.</a>
+					</div><!-- #site-generator -->
+				</div><!-- #colophon -->
+			</footer><!-- #footer -->
+		</div><!-- #wrapper -->
+				<!-- Start of StatCounter Code -->
+		<script>
+			<!--
+			var sc_project=7506087;
+			var sc_security="2feec11f";
+			      var sc_invisible=1;
+			var scJsHost = (("https:" == document.location.protocol) ?
+				"https://secure." : "http://www.");
+			//-->
+					</script>
+		
+<script type="text/javascript"
+				src="https://secure.statcounter.com/counter/counter.js"
+				async></script>		<noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/"><img class="statcounter" src="https://c.statcounter.com/7506087/0/2feec11f/1/" alt="web analytics" /></a></div></noscript>
+		<!-- End of StatCounter Code -->
+		        <script type="text/javascript">
+            (function(){
+                document.addEventListener('DOMContentLoaded', function(){
+                    let wpp_widgets = document.querySelectorAll('.popular-posts-sr');
+
+                    if ( wpp_widgets ) {
+                        for (let i = 0; i < wpp_widgets.length; i++) {
+                            let wpp_widget = wpp_widgets[i];
+                            WordPressPopularPosts.theme(wpp_widget);
+                        }
+                    }
+                });
+            })();
+        </script>
+                <script>
+            var WPPImageObserver = null;
+
+            function wpp_load_img(img) {
+                if ( ! 'imgSrc' in img.dataset || ! img.dataset.imgSrc )
+                    return;
+
+                img.src = img.dataset.imgSrc;
+
+                if ( 'imgSrcset' in img.dataset ) {
+                    img.srcset = img.dataset.imgSrcset;
+                    img.removeAttribute('data-img-srcset');
+                }
+
+                img.classList.remove('wpp-lazyload');
+                img.removeAttribute('data-img-src');
+                img.classList.add('wpp-lazyloaded');
+            }
+
+            function wpp_observe_imgs(){
+                let wpp_images = document.querySelectorAll('img.wpp-lazyload'),
+                    wpp_widgets = document.querySelectorAll('.popular-posts-sr');
+
+                if ( wpp_images.length || wpp_widgets.length ) {
+                    if ( 'IntersectionObserver' in window ) {
+                        WPPImageObserver = new IntersectionObserver(function(entries, observer) {
+                            entries.forEach(function(entry) {
+                                if (entry.isIntersecting) {
+                                    let img = entry.target;
+                                    wpp_load_img(img);
+                                    WPPImageObserver.unobserve(img);
+                                }
+                            });
+                        });
+
+                        if ( wpp_images.length ) {
+                            wpp_images.forEach(function(image) {
+                                WPPImageObserver.observe(image);
+                            });
+                        }
+
+                        if ( wpp_widgets.length ) {
+                            for (var i = 0; i < wpp_widgets.length; i++) {
+                                let wpp_widget_images = wpp_widgets[i].querySelectorAll('img.wpp-lazyload');
+
+                                if ( ! wpp_widget_images.length && wpp_widgets[i].shadowRoot ) {
+                                    wpp_widget_images = wpp_widgets[i].shadowRoot.querySelectorAll('img.wpp-lazyload');
+                                }
+
+                                if ( wpp_widget_images.length ) {
+                                    wpp_widget_images.forEach(function(image) {
+                                        WPPImageObserver.observe(image);
+                                    });
+                                }
+                            }
+                        }
+                    } /** Fallback for older browsers */
+                    else {
+                        if ( wpp_images.length ) {
+                            for (var i = 0; i < wpp_images.length; i++) {
+                                wpp_load_img(wpp_images[i]);
+                                wpp_images[i].classList.remove('wpp-lazyloaded');
+                            }
+                        }
+
+                        if ( wpp_widgets.length ) {
+                            for (var j = 0; j < wpp_widgets.length; j++) {
+                                let wpp_widget = wpp_widgets[j],
+                                    wpp_widget_images = wpp_widget.querySelectorAll('img.wpp-lazyload');
+
+                                if ( ! wpp_widget_images.length && wpp_widget.shadowRoot ) {
+                                    wpp_widget_images = wpp_widget.shadowRoot.querySelectorAll('img.wpp-lazyload');
+                                }
+
+                                if ( wpp_widget_images.length ) {
+                                    for (var k = 0; k < wpp_widget_images.length; k++) {
+                                        wpp_load_img(wpp_widget_images[k]);
+                                        wpp_widget_images[k].classList.remove('wpp-lazyloaded');
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                wpp_observe_imgs();
+
+                // When an ajaxified WPP widget loads,
+                // Lazy load its images
+                document.addEventListener('wpp-onload', function(){
+                    wpp_observe_imgs();
+                });
+            });
+        </script>
+        <script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-content/plugins/wp-syntax/js/wp-syntax.js?ver=1.1'></script>
+<script type='text/javascript' src='http://gurau-audibert.hd.free.fr/josdblog/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+	</body>
+</html>
