@@ -26,6 +26,12 @@ if __name__ == '__main__':
     index_inverse.display()
     #Effectuer une recherche
     #print(index_inverse.search(["Université","Paris","13"]))
-    index_inverse.search(["Université","Paris","13"])
+    print()
+    print()
+    print("fonction search")
+    print()
+    resultats = index_inverse.search(["Université","Paris","13"])
+    print(resultats)
+    print(len(resultats))
 
  
