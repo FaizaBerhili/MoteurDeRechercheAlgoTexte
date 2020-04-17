@@ -2,10 +2,14 @@
 @author: Julian CHAMBRIER
 
 """
-
+# Cette page est une page de test, le serveur Web se chargera de créer et de remplir l'index
 #Importation des bibliothèques utiles
 import inverted_index as ii
 import cleaner
+
+# Les fonctions suivantes seront à intégrer dans le server Web 
+# En effet, le server Web crée l'index et le construit
+# La recherche sera récupérer dirrectement à partir des entrées de l'utilisateur
 
 #Main
 if __name__ == '__main__':
@@ -20,5 +24,6 @@ if __name__ == '__main__':
     index_inverse.build(documents_cleaner)
     #On affiche l'index inversé
     index_inverse.display()
-
- 
+    #Effectuer une recherche
+    #print(index_inverse.search(["Université","Paris","13"]))
+    index_inverse.search(["Université","Paris","13"])
