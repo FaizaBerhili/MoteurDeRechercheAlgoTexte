@@ -1,10 +1,10 @@
 # Projet MoteurDeRechercheAlgo Texte
 
-Le dossier /src contient le code principal du navigateur.
-Le dossier /test contient le code de test pour les différentes fonctionnalités du navigateur.
-Le dossier /doc contient la documentation au projet.
+- Le dossier /src contient le code principal du navigateur.  
+- Le dossier /test contient le code de test pour les différentes fonctionnalités du navigateur.  
+- Le dossier /doc contient la documentation au projet.  
 
-Le navigateur Web utilise le framework Flask afin d'allier le python et le HTML avec un système de templates très simple d'utilisation.
+Le navigateur Web utilise le framework Flask afin d'allier le python et le HTML avec un système de templates très simple d'utilisation.  
 
 Pour compiler le projet et exécuter le projet  
 
