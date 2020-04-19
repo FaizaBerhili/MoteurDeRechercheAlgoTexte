@@ -1,10 +1,10 @@
-# Projet MoteurDeRechercheAlgo Texte (version de test)
+# Projet Moteur de Recherche (Algorithme des Textes)  
 
-Le navigateur Web utilise le framework Flask afin d'allier le python et le HTML avec un système de templates très simple d'utilisation.  
+## Exécution  
 
-Pour compiler le projet et exécuter le projet  
+Pour exécuter le projet  
 
-Installation des bibliothèques nécessaires avant l'exécution du navigateur :  
+1. Veuillez installer préalablement les bibliothèques nécessaires grâce aux commandes suivantes :    
 
 pip install rank_bm25  
 pip install unidecode  
@@ -13,7 +13,7 @@ pip install textdistance
 pip install flask  
 pip install numpy  
   
-OU  
+**OU**  
   
 pip3 install rank_bm25  
 pip3 install unidecode  
@@ -23,10 +23,10 @@ pip3 install flask
 pip3 install numpy  
 
 
-Pour exécuter :   
+2. Puis :   
 
 - Démarrer un Terminal   
-- Aller dans le repertoire /test qui contient les fichiers (cd le_chemin_avant_test/test/)  
+- Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_test/test/)  
 - Lancer la commande : python serverWeb_test.py  
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
 (Le lancement du serveur peut être long dû à la création de l'index inversé de millier de fichier)  
