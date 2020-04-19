@@ -1,4 +1,8 @@
-# Projet MoteurDeRechercheAlgo Texte
+# Projet Moteur de Recherche (Algorithme des Textes)
+
+## Description du projet  
+
+Le but de ce projet est de réaliser un navigateur.  
 
 - Le dossier /src contient le code principal du navigateur.  
 - Le dossier /test contient le code de test pour les différentes fonctionnalités du navigateur.  
@@ -6,9 +10,11 @@
 
 Le navigateur Web utilise le framework Flask afin d'allier le python et le HTML avec un système de templates très simple d'utilisation.  
 
-Pour compiler le projet et exécuter le projet  
+## Exécution  
 
-Installation des bibliothèques nécessaires avant l'exécution du navigateur :  
+Pour exécuter le projet  
+
+1. Veuillez installer préalablement les bibliothèques nécessaires grâce aux commandes suivantes :    
 
 pip install rank_bm25  
 pip install unidecode  
@@ -17,7 +23,7 @@ pip install textdistance
 pip install flask  
 pip install numpy  
   
-OU  
+**OU**  
   
 pip3 install rank_bm25  
 pip3 install unidecode  
@@ -27,7 +33,7 @@ pip3 install flask
 pip3 install numpy  
 
 
-Pour exécuter :   
+2. Puis :   
 
 - Démarrer un Terminal   
 - Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_src/src/)  
