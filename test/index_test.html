@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="utf-8">
+    <title>JuAmEm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+        }
+        #div-search-bar{
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            width:50%;
+            text-align:center;
+        }
+        #search-form{
+        }
+        #search-button{
+            width:20%;
+            margin: auto;
+            margin-top:0.5%;
+        }
+        #browser-name{
+            font-size: 400%;
+        }
+        #letter-J{
+            color: blue;
+        }
+        #letter-U{
+            color: red;
+        }
+        #letter-A{
+            color: yellow;
+        }
+        #letter-M1{
+            color: blue;
+        }
+        #letter-E{
+            color: green;
+        }
+        #letter-M2{
+            color: red;
+        }
+
+    </style>
+    <script>
+        function valider(f){
+            if(f[0].value.trim().length == 0){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="div-search-bar">
+            <h1 id="browser-name" class="text-center"><span id="letter-J">J</span><span id="letter-U">u</span><span id="letter-A">A</span><span id="letter-M1">m</span><span id="letter-E">E</span><span id="letter-M2">m</span></h1>
+		    <form  id="search-form" action="{{ url_for('search') }}" method="POST" class="form-group" onSubmit="return valider(this)">
+                <input id="search-bar" class="form-control" type="search" placeholder="Rechercher..." aria-label="Search" name="search_bar"/>
+                <button id="search-button" class="form-control" type="submit"><i class=" fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
