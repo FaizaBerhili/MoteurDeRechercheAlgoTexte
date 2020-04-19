@@ -29,15 +29,15 @@ pip3 install numpy
 
 Pour exécuter :   
 
--> Démarrer un Terminal   
--> Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_src/src/)  
--> Lancer la commande : python serverWeb.py  
--> Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
+- Démarrer un Terminal   
+- Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_src/src/)  
+- Lancer la commande : python serverWeb.py  
+- Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
 (Le lancement du serveur peut être long dû à la création de l'index inversé de millier de fichier)  
--> Ouvrer votre navigateur et entrer http://localhost:8090 ou localhost:8090  
--> Le navigateur JuAmEm se lance  
--> (Si vous avez le message "La connexion a échoué", regarder si votre serveur Web est bien lancé dans le terminal)  
--> Vous pouvez effectuer des recherches sur le navigateur   
-	-> Si une recherche VIDE est effectué, le navigateur ne lance aucune recherche  
-	-> Si une recherche NON VIDE est effectué, le navigateur lance une recherche et renvoie ses résultats dans une seconde page  
-	-> 10 résultats peuvent être affiché au maximum. Si la recherche n'a pas de résultat, le message "Aucun résultat." s'affichera  
+- Ouvrer votre navigateur et entrer http://localhost:8090 ou localhost:8090  
+- Le navigateur JuAmEm se lance  
+- (Si vous avez le message "La connexion a échoué", regarder si votre serveur Web est bien lancé dans le terminal)  
+- Vous pouvez effectuer des recherches sur le navigateur   
+	- Si une recherche VIDE est effectué, le navigateur ne lance aucune recherche  
+	- Si une recherche NON VIDE est effectué, le navigateur lance une recherche et renvoie ses résultats dans une seconde page  
+	- 10 résultats peuvent être affiché au maximum. Si la recherche n'a pas de résultat, le message "Aucun résultat." s'affichera  
