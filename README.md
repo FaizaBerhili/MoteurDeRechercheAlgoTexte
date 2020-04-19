@@ -36,7 +36,7 @@ Pour exécuter :
 (Le lancement du serveur peut être long dû à la création de l'index inversé de millier de fichier)  
 - Ouvrer votre navigateur et entrer http://localhost:8090 ou localhost:8090  
 - Le navigateur JuAmEm se lance  
-- (Si vous avez le message "La connexion a échoué", regarder si votre serveur Web est bien lancé dans le terminal)  
+	- (Si vous avez le message "La connexion a échoué", regarder si votre serveur Web est bien lancé dans le terminal)  
 - Vous pouvez effectuer des recherches sur le navigateur   
 	- Si une recherche VIDE est effectué, le navigateur ne lance aucune recherche  
 	- Si une recherche NON VIDE est effectué, le navigateur lance une recherche et renvoie ses résultats dans une seconde page  
