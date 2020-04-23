@@ -1,14 +1,4 @@
-# Projet Moteur de Recherche (Algorithme des Textes)
-
-## Description du projet  
-
-Le but de ce projet est de réaliser un navigateur.  
-
-- Le dossier /src contient le code principal du navigateur.  
-- Le dossier /test contient le code de test pour les différentes fonctionnalités du navigateur.  
-- Le dossier /doc contient la documentation au projet.  
-
-Le navigateur Web utilise le framework Flask afin d'allier le python et le HTML avec un système de templates très simple d'utilisation.  
+# Projet Moteur de Recherche (Algorithme des Textes)  
 
 ## Exécution  
 
@@ -36,8 +26,8 @@ pip3 install numpy
 2. Puis :   
 
 - Démarrer un Terminal   
-- Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_src/src/)  
-- Lancer la commande : python serverWeb.py  
+- Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_test/test/)  
+- Lancer la commande : python serverWeb_test.py  
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
 (Le lancement du serveur peut être long dû à la création de l'index inversé de millier de fichier)  
 - Ouvrer votre navigateur et entrer http://localhost:8090 ou localhost:8090  

@@ -11,6 +11,10 @@ import textdistance
 # En effet, le server Web crée l'index et le construit
 # La recherche sera récupérer dirrectement à partir des entrées de l'utilisateur
 
+# Les fonctions suivantes seront à intégrer dans le server Web 
+# En effet, le server Web crée l'index et le construit
+# La recherche sera récupérer dirrectement à partir des entrées de l'utilisateur
+
 #Main
 if __name__ == '__main__':
     #On charge les documents
@@ -27,12 +31,15 @@ if __name__ == '__main__':
     #Effectuer une recherche
     #print(index_inverse.search(["Université","Paris","13"]))
     print()
+
     print(type(index_inverse.index))
+
     print("fonction search")
     print()
     resultats = index_inverse.search(["Université","Paris","13"])
     print(resultats)
     print(len(resultats))
+
 
 
     motCle = "methode"   

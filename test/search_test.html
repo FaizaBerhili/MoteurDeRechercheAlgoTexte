@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="utf-8">
+    <title>JuAmEm - Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+        }
+        #search-header{
+            padding-top: 2%;
+            padding-bottom: 1%;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(214, 214, 214);
+            border-bottom-width: 1px;
+            margin-bottom:1.5%;
+
+        }
+        #div-search-bar{
+            text-align:center;
+            background-color:blue;
+            overflow: hidden; 
+        }
+        #search-form{
+        }
+        #browser-name{
+            text-align:center;
+            font-size:150%;
+        }
+        #div-browser-name{
+            min-width: 100px;
+        }
+        #letter-J{
+            color: blue;
+        }
+        #letter-U{
+            color: red;
+        }
+        #letter-A{
+            color: yellow;
+        }
+        #letter-M1{
+            color: blue;
+        }
+        #letter-E{
+            color: green;
+        }
+        #letter-M2{
+            color: red;
+        }
+        .div-link{
+            border: 2px solid;
+            border-color: rgb(240, 240, 240);
+            border-radius:10px;     
+            background-color: rgb(245, 245, 245);
+            margin-bottom: 0.5%;
+            padding-left:1%;
+            padding-top:0.7%;
+            padding-bottom:0.7%;
+            color:#3c3c3c;
+        }
+        .div-link:hover{
+            background-color: rgb(238, 238, 238);
+        }
+        .div-link a{
+            color:#3c3c3c;
+            font-size: 120%;
+        }
+        .link{
+        	color:black;
+        	font-size: 80%;
+        }
+        .fa{
+        	font-size: 120%;
+        	margin-bottom: 0%; 
+        }
+
+    </style>
+    <script>
+        function valider(f){
+            if(f[0].value.trim().length == 0){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="search-header">
+            <div class="row">
+                <div id="div-browser-name" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center">
+                    <a style="text-decoration:none" href="{{ url_for('index') }}"><span id="browser-name" class="text-center"><span id="letter-J">J</span><span id="letter-U">u</span><span id="letter-A">A</span><span id="letter-M1">m</span><span id="letter-E">E</span><span id="letter-M2">m</span></span></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                    <form  id="search-form" action="{{ url_for('search') }}" method="POST" class="form-group" onSubmit="return valider(this)">
+                        <div class="row">
+                            <div id="div-search-input" class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-center">
+                                <input id="" class="form-control" type="search" placeholder="Rechercher..." aria-label="Search" name="search_bar" value="{{requete}}">
+                            </div>
+                            <div id="div-search-input" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                <button id="search-button" class="form-control" type="submit"><i class=" fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        {% if file_list|length == 0 %}
+            <p>Aucun résultat trouvé.</p>
+        {% endif %}
+        {% for file in file_list %}
+            <div class="div-link"> 
+            	<div class="link">http://{{file[0]}}&ensp;<i class="fa fa-sort-down"></i></div>
+                <a href="http://{{file[0]}}">{{file[1]}}</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
