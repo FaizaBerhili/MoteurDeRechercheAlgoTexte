@@ -6,6 +6,10 @@
 #Importation des bibliothèques utiles
 import inverted_index_test as ii
 import cleaner_test
+import textdistance
+# Les fonctions suivantes seront à intégrer dans le server Web 
+# En effet, le server Web crée l'index et le construit
+# La recherche sera récupérer dirrectement à partir des entrées de l'utilisateur
 
 # Les fonctions suivantes seront à intégrer dans le server Web 
 # En effet, le server Web crée l'index et le construit
@@ -27,11 +31,27 @@ if __name__ == '__main__':
     #Effectuer une recherche
     #print(index_inverse.search(["Université","Paris","13"]))
     print()
-    print()
+
+    print(type(index_inverse.index))
+
     print("fonction search")
     print()
     resultats = index_inverse.search(["Université","Paris","13"])
     print(resultats)
     print(len(resultats))
+
+
+
+    motCle = "methode"   
+    motsSimilaire = []
+    for keys in index_inverse.index.keys(): 	
+    	if textdistance.levenshtein(motCle,keys)<2 :
+    		motsSimilaire.append(keys)
+
+    print()
+    print("mot similaire a " + motCle)
+    print(motsSimilaire)
+
+
 
  
