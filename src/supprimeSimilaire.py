@@ -13,7 +13,7 @@ import os
 
 
 def supressionPage(dico):
-	fichiers = os.listdir('./pages_web_supprime/')
+	fichiers = os.listdir('./pages_web_test/')
 	#print("nombre de fichiers dans le répertoire : ")
 	#print(len(fichiers))
 	for fichier in fichiers:
@@ -26,7 +26,7 @@ def supressionPage(dico):
 				dico.pop(f) #supprime clé nom du fichier du dico
 		except KeyError:
 			#print("pas de clé trouvé donc suppression de la page")
-			os.remove('./pages_web_supprime/' + fichier)
+			os.remove('./pages_web_test/' + fichier)
 
 
 
