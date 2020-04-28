@@ -37,7 +37,8 @@ pip3 install numpy
 
 - Démarrer un Terminal   
 - Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_src/src/)  
-- Lancer la commande : python serverWeb.py  
+- Lancer (une fois pour toute) la commande : python supprimeSimilaire.py (ou python3 supprimeSimilaire.py) pour supprimer les pages trop similaires
+- Lancer la commande : python serverWeb.py (ou python supprimeSimilaire.py)
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
 (Le lancement du serveur peut être long dû à la création de l'index inversé de millier de fichier)  
 - Ouvrer votre navigateur et entrer http://localhost:8090 ou localhost:8090  
@@ -46,4 +47,5 @@ pip3 install numpy
 - Vous pouvez effectuer des recherches sur le navigateur   
 	- Si une recherche VIDE est effectué, le navigateur ne lance aucune recherche  
 	- Si une recherche NON VIDE est effectué, le navigateur lance une recherche et renvoie ses résultats dans une seconde page  
+	- Si vous faites une recherche avec des fautes d'othographes, vous aurez un affichage
 	- 10 résultats peuvent être affiché au maximum. Si la recherche n'a pas de résultat, le message "Aucun résultat." s'affichera  
