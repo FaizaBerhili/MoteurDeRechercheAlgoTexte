@@ -13,6 +13,7 @@ import tf_idf_test
 import unidecode
 import string
 from bs4 import BeautifulSoup
+import motSimilaire
 
 #Class de l'index inversé
 class inverted_index:
@@ -41,8 +42,9 @@ class inverted_index:
             files.add(file_name)
 
     #Fonction de recherche
-    def search(self, request):
+    def search(self, request1):
         list_file_score = []
+        request=motSimilaire.listeSimilaire(request1,self.index)
         # Pour chaque mots de la requete on cherche les fichiers où sont présent ces mots
         for word in request:
             #On traite les mots de la requete pour quelle colle au mieux à l'index
@@ -138,6 +140,7 @@ class inverted_index:
         except ValueError:
             #print("Erreur dans le fichier")
             return ""
+
 
 
 
