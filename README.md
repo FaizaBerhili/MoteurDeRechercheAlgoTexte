@@ -1,5 +1,10 @@
 # Projet Moteur de Recherche (Algorithme des Textes)
 
+Projet de Master 1 Informatique réalisé par :  
+- Julian CHAMBRIER (11601367)
+- Ammar ALSADIK (11601920)
+- Emiliano BOUSSAC (11413126)
+
 ## Description du projet  
 
 Le but de ce projet est de réaliser un navigateur.  
