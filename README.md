@@ -37,6 +37,7 @@ pip3 install numpy
 
 - Démarrer un Terminal   
 - Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_src/src/)  
+- Veuillez télécharger les pages Web à l'adresse suivante et les placer dans /src : https://lipn.univ-paris13.fr/~david/doc/pages_web.tgz
 - Lancer (une fois pour toute) la commande : python supprimeSimilaire.py (ou python3 supprimeSimilaire.py) pour supprimer les pages trop similaires
 - Lancer la commande : python serverWeb.py (ou python supprimeSimilaire.py)
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
