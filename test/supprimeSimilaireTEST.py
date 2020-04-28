@@ -12,7 +12,7 @@ import supprimeSimilaire as supSim
 from pageSimilaireTEST import dico
 
 
-fichiers = os.listdir('./pages_web_supprime/')
+fichiers = os.listdir('./pages_web_test/')
 print("nombre fichiers avant suppresssion")
 print(len(fichiers))
 
@@ -20,7 +20,7 @@ print(len(fichiers))
 
 supSim.supressionPage(dico)
 
-fichiers = os.listdir('./pages_web_supprime/')
+fichiers = os.listdir('./pages_web_test/')
 print("nombre fichiers apres suppresssion")
 print(len(fichiers))
 
