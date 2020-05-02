@@ -99,10 +99,10 @@
                     <a style="text-decoration:none" href="{{ url_for('index') }}"><span id="browser-name" class="text-center"><span id="letter-J">J</span><span id="letter-U">u</span><span id="letter-A">A</span><span id="letter-M1">m</span><span id="letter-E">E</span><span id="letter-M2">m</span></span></a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-                    <form  id="search-form" action="{{ url_for('search') }}" method="POST" class="form-group" onSubmit="return valider(this)">
+                    <form  id="search-form" action="{{ url_for('search') }}" method="GET" class="form-group" onSubmit="return valider(this)">
                         <div class="row">
                             <div id="div-search-input" class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-center">
-                                <input id="" class="form-control" type="search" placeholder="Rechercher..." aria-label="Search" name="search_bar" value="{{requete}}">
+                                <input id="" class="form-control" type="search" placeholder="Rechercher..." aria-label="Search" name="recherche" value="{{requete}}">
                             </div>
                             <div id="div-search-input" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
                                 <button id="search-button" class="form-control" type="submit"><i class=" fa fa-search"></i></button>
