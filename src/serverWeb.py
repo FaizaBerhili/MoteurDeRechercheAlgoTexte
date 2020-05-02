@@ -19,12 +19,15 @@ index_inverse.build(documents_cleaner)
 #Route principale : la page d'accueil
 @app.route('/')
 def index():
-    return render_template('index.html')	
+    return render_template('index.html')
+@app.route('/index')
+def route_index():
+    return render_template('index.html')		
 
 #Route quand on fait une recherche, on envoie a la page de recherche la liste des fichiers en fonction de la requete ainsi que la requete pour l'afficher
-@app.route('/search', methods=['POST'])
+@app.route('/search', methods=['GET'])
 def search():
-    return render_template("search.html",requete =request.form['search_bar'], file_list = index_inverse.search(request.form['search_bar'].split()))
+    return render_template("search.html", requete =request.args.get('recherche', default=""), file_list = index_inverse.search(request.args.get('recherche',default="").split()))
 
 if __name__ == '__main__':
     app.run(
