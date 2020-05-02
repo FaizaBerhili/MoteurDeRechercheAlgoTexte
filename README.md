@@ -47,7 +47,7 @@ pip3 install numpy
 - Lancer (une fois pour toute) la commande : python supprimeSimilaire.py (ou python3 supprimeSimilaire.py) pour supprimer les pages trop similaires
 - Lancer la commande : python serverWeb.py (ou python supprimeSimilaire.py)
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
-(Le lancement du serveur peut être long dû à la création de l'index inversé de millier de fichier)  
+(Le lancement du serveur peut être long dû à la création de l'index inversé de milliers de fichier)  
 - Ouvrer votre navigateur et entrer http://localhost:8090 ou localhost:8090  
 - Le navigateur JuAmEm se lance  
 	- (Si vous avez le message "La connexion a échoué", regarder si votre serveur Web est bien lancé dans le terminal)  
