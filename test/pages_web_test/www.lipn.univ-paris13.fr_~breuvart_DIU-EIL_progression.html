@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>progression</title>
+<!-- 2019-06-22 sam. 11:21 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Breuvart Flavien" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">progression</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Légende</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Les (&gt;&gt; Nom)</a></li>
+<li><a href="#sec-1-2">1.2. le (&#x2013;) sur un sous-thème</a></li>
+<li><a href="#sec-1-3">1.3. le (++) sur un sous-thème</a></li>
+<li><a href="#sec-1-4">1.4. le (++) sur une séquence</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Attendus</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Pour l'évaluation</a>
+<ul>
+<li><a href="#sec-2-1-1">2.1.1. Une petite présentation de 15mn qui présente ce qui a été fait</a></li>
+<li><a href="#sec-2-1-2">2.1.2. Un corpus de matériels</a></li>
+<li><a href="#sec-2-1-3">2.1.3. Un ensemble des compétences vues et référence au programme</a></li>
+<li><a href="#sec-2-1-4">2.1.4. Une évalutation sommative</a></li>
+<li><a href="#sec-2-1-5">2.1.5. Une ou plusieurs évaluations (qui peuvent prendre la forme de petits projets)</a></li>
+<li><a href="#sec-2-1-6">2.1.6. Quelques petits exercices</a></li>
+<li><a href="#sec-2-1-7">2.1.7. Des références sur le sujets</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-2">2.2. Pour les autres collègues</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Trimestre 1 : Les briques de bases</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Rappels</a>
+<ul>
+<li><a href="#sec-3-1-1">3.1.1. (&#x2013;) Variables en informatique</a></li>
+<li><a href="#sec-3-1-2">3.1.2. (&#x2013;) Boucle</a></li>
+<li><a href="#sec-3-1-3">3.1.3. (&#x2013;) fonctions</a></li>
+<li><a href="#sec-3-1-4">3.1.4. (&#x2013;) Les strings et les int</a></li>
+<li><a href="#sec-3-1-5">3.1.5. (&#x2013;) print</a></li>
+<li><a href="#sec-3-1-6">3.1.6. entrées du programmes</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-2">3.2. Manipulation simple de tableaux &gt;&gt; Aaqqad, Bourbotte</a>
+<ul>
+<li><a href="#sec-3-2-1">3.2.1. notion de nuplet</a></li>
+<li><a href="#sec-3-2-2">3.2.2. notion de liste</a></li>
+<li><a href="#sec-3-2-3">3.2.3. Recherche dans une liste</a></li>
+<li><a href="#sec-3-2-4">3.2.4. notion de table</a></li>
+<li><a href="#sec-3-2-5">3.2.5. Recherche dans une table</a></li>
+<li><a href="#sec-3-2-6">3.2.6. notion de matrice</a></li>
+<li><a href="#sec-3-2-7">3.2.7. (++) Dictionnaires et enregistrements</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-3">3.3. Booléens &gt;&gt; Marchal, Hergott</a>
+<ul>
+<li><a href="#sec-3-3-1">3.3.1. Valeurs Booléennes</a></li>
+<li><a href="#sec-3-3-2">3.3.2. Codage des Booléens</a></li>
+<li><a href="#sec-3-3-3">3.3.3. Expressions booléennes</a></li>
+<li><a href="#sec-3-3-4">3.3.4. Boucles et expressions booléennes</a></li>
+<li><a href="#sec-3-3-5">3.3.5. Opérateurs Booléens</a></li>
+<li><a href="#sec-3-3-6">3.3.6. (++) opérations bouléennes bit à bit</a></li>
+<li><a href="#sec-3-3-7">3.3.7. (++) encodage de circuits</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-4">3.4. Entiers &gt;&gt; Boutillier, Larcher, Reiter</a>
+<ul>
+<li><a href="#sec-3-4-1">3.4.1. Base 2 et autres</a></li>
+<li><a href="#sec-3-4-2">3.4.2. entiers relatif</a></li>
+<li><a href="#sec-3-4-3">3.4.3. opérations usuelles</a></li>
+<li><a href="#sec-3-4-4">3.4.4. décalages et autres opérations spéciales</a></li>
+<li><a href="#sec-3-4-5">3.4.5. (++) encodage de circuits</a></li>
+<li><a href="#sec-3-4-6">3.4.6. (++) Les images comme matrice d'entiers</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-5">3.5. (++) Flottants (&gt;&gt; Boutillier, Larcher, Reiter)</a>
+<ul>
+<li><a href="#sec-3-5-1">3.5.1. Paradoxes sur les flotants</a></li>
+<li><a href="#sec-3-5-2">3.5.2. Notion d'approximation bornée</a></li>
+<li><a href="#sec-3-5-3">3.5.3. exemples d'encodages</a></li>
+<li><a href="#sec-3-5-4">3.5.4. (++) découpage formelle matrice/exposant</a></li>
+<li><a href="#sec-3-5-5">3.5.5. (++) calculs d'erreurs d'arondis</a></li>
+<li><a href="#sec-3-5-6">3.5.6. (++) optimiser les erreurs d'arondis (que fait Python ?)</a></li>
+<li><a href="#sec-3-5-7">3.5.7. (++) bibliothèque NumPy (ou autre bibliothèque de calcul numérique)</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-6">3.6. Données textuelles et fichiers &gt;&gt; Treillard, Mondary</a>
+<ul>
+<li><a href="#sec-3-6-1">3.6.1. Représentation d’un texte en machine.</a></li>
+<li><a href="#sec-3-6-2">3.6.2. Différencier les fichiers binaires, de code et de donées</a></li>
+<li><a href="#sec-3-6-3">3.6.3. Dictionnaires comme enregistrements</a></li>
+<li><a href="#sec-3-6-4">3.6.4. Importer une table depuis un fichier texte tabulé ou un fichier CSV.</a></li>
+<li><a href="#sec-3-6-5">3.6.5. présenter les données EXIF d’une image sous la forme d’un enregistrement</a></li>
+<li><a href="#sec-3-6-6">3.6.6. (++) Extraction de fichier YAML/JSON</a></li>
+<li><a href="#sec-3-6-7">3.6.7. (++) Extraire le code html d'une page internet dans comme un enregistrement d'enregistements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Trimestre 2 : L'algorithmique</a>
+<ul>
+<li><a href="#sec-4-1">4.1. tris quadratiques et lgorithmes multilinéaires sur les tableau &gt;&gt; Hafaidia, Sebkhi, Idrissi</a>
+<ul>
+<li><a href="#sec-4-1-1">4.1.1. Tris par insertion</a></li>
+<li><a href="#sec-4-1-2">4.1.2. Tris par sélection</a></li>
+<li><a href="#sec-4-1-3">4.1.3. Tris d'une table</a></li>
+<li><a href="#sec-4-1-4">4.1.4. utilisation des fonctions</a></li>
+<li><a href="#sec-4-1-5">4.1.5. Compréhention sur les tableaux</a></li>
+<li><a href="#sec-4-1-6">4.1.6. manipulation un peu complexe mais (multi)linéaire de tableaux</a></li>
+<li><a href="#sec-4-1-7">4.1.7. (++) avant-goût des problématiques fonctionnel</a></li>
+<li><a href="#sec-4-1-8">4.1.8. (++) et objet (via différents exo sur les enregistrements)</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-2">4.2. comlexité et recherche dichotomique &gt;&gt; Yana, Lezin</a>
+<ul>
+<li><a href="#sec-4-2-1">4.2.1. complexité du tri par insertion</a></li>
+<li><a href="#sec-4-2-2">4.2.2. complexité du tri par sélection</a></li>
+<li><a href="#sec-4-2-3">4.2.3. complexité de la recherche naive</a></li>
+<li><a href="#sec-4-2-4">4.2.4. recherche dichotomique</a></li>
+<li><a href="#sec-4-2-5">4.2.5. complexité de la recherche dichotomique</a></li>
+<li><a href="#sec-4-2-6">4.2.6. (++) borne d'optimalité sur la recherche</a></li>
+<li><a href="#sec-4-2-7">4.2.7. (++) borne d'optimalité sur les tris</a></li>
+<li><a href="#sec-4-2-8">4.2.8. (++) tris rapides</a></li>
+<li><a href="#sec-4-2-9">4.2.9. (++) complexité des tris rapides</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-3">4.3. Algorithmes gloutons &gt;&gt; Bensussan, Le Yaouanc</a>
+<ul>
+<li><a href="#sec-4-3-1">4.3.1. Rendu de monaie en euros</a></li>
+<li><a href="#sec-4-3-2">4.3.2. Introduir les Dictionnaires dynamiques dans cette séquence</a></li>
+<li><a href="#sec-4-3-3">4.3.3. Sac à dos avec contenu séquable</a></li>
+<li><a href="#sec-4-3-4">4.3.4. glouton qui ne marche pas</a></li>
+<li><a href="#sec-4-3-5">4.3.5. (++) Prim ou Kruskal</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-4">4.4. (++) Algos pour l'IA &gt;&gt; Ligeret, Mousset</a>
+<ul>
+<li><a href="#sec-4-4-1">4.4.1. k plus proches voisins</a></li>
+<li><a href="#sec-4-4-2">4.4.2. (++) culture G d'IA</a></li>
+<li><a href="#sec-4-4-3">4.4.3. (++) descente de gradiants dans une matrice</a></li>
+<li><a href="#sec-4-4-4">4.4.4. (++) réduction de la dimention par agrégation de données</a></li>
+<li><a href="#sec-4-4-5">4.4.5. (++) Peut être envisager l'algorithme A* ?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Trimestre 3 : La programmation web</a>
+<ul>
+<li><a href="#sec-5-1">5.1. Web et html &gt;&gt; Houot, Morel, Ndzie Ewodo</a>
+<ul>
+<li><a href="#sec-5-1-1">5.1.1. distinctions html/CSS</a></li>
+<li><a href="#sec-5-1-2">5.1.2. bonnes pratiques</a></li>
+<li><a href="#sec-5-1-3">5.1.3. formulaires</a></li>
+<li><a href="#sec-5-1-4">5.1.4. POST/GET</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-2">5.2. (++) javascript</a>
+<ul>
+<li><a href="#sec-5-2-1">5.2.1. Le triplet html/CSS/javascript</a></li>
+<li><a href="#sec-5-2-2">5.2.2. Analyser et modifier les méthodes exécutées lors d’un clic sur un bouton d’une page Web</a></li>
+<li><a href="#sec-5-2-3">5.2.3. (++) code frontend et code backend</a></li>
+<li><a href="#sec-5-2-4">5.2.4. (++) javascript : un autre langage de programmation</a></li>
+<li><a href="#sec-5-2-5">5.2.5. (++) programmer en javascript</a></li>
+<li><a href="#sec-5-2-6">5.2.6. (++) interactions entre javascript et html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-6">6. Sur l'année</a>
+<ul>
+<li><a href="#sec-6-1">6.1. Projet filé sur plusieurs séquence</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Légende</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Les (&gt;&gt; Nom)</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+A été pris par un groupe (ceux-ci m'ont envoyé un mail)
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> le (&#x2013;) sur un sous-thème</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+indique qu'il est sensé s'agir d'un rappel de seconde, mais pas pour l'an prochain&#x2026;.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> le (++) sur un sous-thème</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+indique qu'il s'agit d'un dévelopement avancé, non nécéssaire pour le programme
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> le (++) sur une séquence</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+indique que la séquence contien majoritairement des dévelopements et peut donc être fusionnée avec la précédente
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Attendus</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Pour l'évaluation</h3>
+<div class="outline-text-3" id="text-2-1">
+</div><div id="outline-container-sec-2-1-1" class="outline-4">
+<h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> Une petite présentation de 15mn qui présente ce qui a été fait</h4>
+</div>
+<div id="outline-container-sec-2-1-2" class="outline-4">
+<h4 id="sec-2-1-2"><span class="section-number-4">2.1.2</span> Un corpus de matériels</h4>
+</div>
+<div id="outline-container-sec-2-1-3" class="outline-4">
+<h4 id="sec-2-1-3"><span class="section-number-4">2.1.3</span> Un ensemble des compétences vues et référence au programme</h4>
+</div>
+<div id="outline-container-sec-2-1-4" class="outline-4">
+<h4 id="sec-2-1-4"><span class="section-number-4">2.1.4</span> Une évalutation sommative</h4>
+</div>
+<div id="outline-container-sec-2-1-5" class="outline-4">
+<h4 id="sec-2-1-5"><span class="section-number-4">2.1.5</span> Une ou plusieurs évaluations (qui peuvent prendre la forme de petits projets)</h4>
+</div>
+<div id="outline-container-sec-2-1-6" class="outline-4">
+<h4 id="sec-2-1-6"><span class="section-number-4">2.1.6</span> Quelques petits exercices</h4>
+</div>
+<div id="outline-container-sec-2-1-7" class="outline-4">
+<h4 id="sec-2-1-7"><span class="section-number-4">2.1.7</span> Des références sur le sujets</h4>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Pour les autres collègues</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Tout ce que vous aimeriez que eux vous fournissent sur leur séquence&#x2026;
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Trimestre 1 : Les briques de bases</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Rappels</h3>
+<div class="outline-text-3" id="text-3-1">
+</div><div id="outline-container-sec-3-1-1" class="outline-4">
+<h4 id="sec-3-1-1"><span class="section-number-4">3.1.1</span> (&#x2013;) Variables en informatique</h4>
+</div>
+<div id="outline-container-sec-3-1-2" class="outline-4">
+<h4 id="sec-3-1-2"><span class="section-number-4">3.1.2</span> (&#x2013;) Boucle</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+while ou for, pas les deux, je penses
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-1-3" class="outline-4">
+<h4 id="sec-3-1-3"><span class="section-number-4">3.1.3</span> (&#x2013;) fonctions</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<p>
+syntaxe et utilisation, mais pas forcément d'écriture 
+de fonction complexe à ce stade
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-1-4" class="outline-4">
+<h4 id="sec-3-1-4"><span class="section-number-4">3.1.4</span> (&#x2013;) Les strings et les int</h4>
+</div>
+<div id="outline-container-sec-3-1-5" class="outline-4">
+<h4 id="sec-3-1-5"><span class="section-number-4">3.1.5</span> (&#x2013;) print</h4>
+</div>
+<div id="outline-container-sec-3-1-6" class="outline-4">
+<h4 id="sec-3-1-6"><span class="section-number-4">3.1.6</span> entrées du programmes</h4>
+<div class="outline-text-4" id="text-3-1-6">
+<p>
+Celon le programme de seconde, interation avec le terminal ou ouverture de fichier.
+On peut aussi s'en passer dans le prompteur python ou avec jupyter&#x2026; à vous de voire.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Manipulation simple de tableaux &gt;&gt; Aaqqad, Bourbotte</h3>
+<div class="outline-text-3" id="text-3-2">
+</div><div id="outline-container-sec-3-2-1" class="outline-4">
+<h4 id="sec-3-2-1"><span class="section-number-4">3.2.1</span> notion de nuplet</h4>
+</div>
+<div id="outline-container-sec-3-2-2" class="outline-4">
+<h4 id="sec-3-2-2"><span class="section-number-4">3.2.2</span> notion de liste</h4>
+</div>
+<div id="outline-container-sec-3-2-3" class="outline-4">
+<h4 id="sec-3-2-3"><span class="section-number-4">3.2.3</span> Recherche dans une liste</h4>
+</div>
+<div id="outline-container-sec-3-2-4" class="outline-4">
+<h4 id="sec-3-2-4"><span class="section-number-4">3.2.4</span> notion de table</h4>
+</div>
+<div id="outline-container-sec-3-2-5" class="outline-4">
+<h4 id="sec-3-2-5"><span class="section-number-4">3.2.5</span> Recherche dans une table</h4>
+</div>
+<div id="outline-container-sec-3-2-6" class="outline-4">
+<h4 id="sec-3-2-6"><span class="section-number-4">3.2.6</span> notion de matrice</h4>
+</div>
+<div id="outline-container-sec-3-2-7" class="outline-4">
+<h4 id="sec-3-2-7"><span class="section-number-4">3.2.7</span> (++) Dictionnaires et enregistrements</h4>
+<div class="outline-text-4" id="text-3-2-7">
+<p>
+Vu en fin de trimestre sinon
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Booléens &gt;&gt; Marchal, Hergott</h3>
+<div class="outline-text-3" id="text-3-3">
+</div><div id="outline-container-sec-3-3-1" class="outline-4">
+<h4 id="sec-3-3-1"><span class="section-number-4">3.3.1</span> Valeurs Booléennes</h4>
+</div>
+<div id="outline-container-sec-3-3-2" class="outline-4">
+<h4 id="sec-3-3-2"><span class="section-number-4">3.3.2</span> Codage des Booléens</h4>
+</div>
+<div id="outline-container-sec-3-3-3" class="outline-4">
+<h4 id="sec-3-3-3"><span class="section-number-4">3.3.3</span> Expressions booléennes</h4>
+<div class="outline-text-4" id="text-3-3-3">
+<ul class="org-ul">
+<li>fonctions à retours booléens
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-3-4" class="outline-4">
+<h4 id="sec-3-3-4"><span class="section-number-4">3.3.4</span> Boucles et expressions booléennes</h4>
+<div class="outline-text-4" id="text-3-3-4">
+<p>
+Voire la boucle for ici seulement
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-3-5" class="outline-4">
+<h4 id="sec-3-3-5"><span class="section-number-4">3.3.5</span> Opérateurs Booléens</h4>
+</div>
+<div id="outline-container-sec-3-3-6" class="outline-4">
+<h4 id="sec-3-3-6"><span class="section-number-4">3.3.6</span> (++) opérations bouléennes bit à bit</h4>
+</div>
+<div id="outline-container-sec-3-3-7" class="outline-4">
+<h4 id="sec-3-3-7"><span class="section-number-4">3.3.7</span> (++) encodage de circuits</h4>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Entiers &gt;&gt; Boutillier, Larcher, Reiter</h3>
+<div class="outline-text-3" id="text-3-4">
+</div><div id="outline-container-sec-3-4-1" class="outline-4">
+<h4 id="sec-3-4-1"><span class="section-number-4">3.4.1</span> Base 2 et autres</h4>
+</div>
+<div id="outline-container-sec-3-4-2" class="outline-4">
+<h4 id="sec-3-4-2"><span class="section-number-4">3.4.2</span> entiers relatif</h4>
+</div>
+<div id="outline-container-sec-3-4-3" class="outline-4">
+<h4 id="sec-3-4-3"><span class="section-number-4">3.4.3</span> opérations usuelles</h4>
+</div>
+<div id="outline-container-sec-3-4-4" class="outline-4">
+<h4 id="sec-3-4-4"><span class="section-number-4">3.4.4</span> décalages et autres opérations spéciales</h4>
+</div>
+<div id="outline-container-sec-3-4-5" class="outline-4">
+<h4 id="sec-3-4-5"><span class="section-number-4">3.4.5</span> (++) encodage de circuits</h4>
+</div>
+<div id="outline-container-sec-3-4-6" class="outline-4">
+<h4 id="sec-3-4-6"><span class="section-number-4">3.4.6</span> (++) Les images comme matrice d'entiers</h4>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> (++) Flottants (&gt;&gt; Boutillier, Larcher, Reiter)</h3>
+<div class="outline-text-3" id="text-3-5">
+</div><div id="outline-container-sec-3-5-1" class="outline-4">
+<h4 id="sec-3-5-1"><span class="section-number-4">3.5.1</span> Paradoxes sur les flotants</h4>
+</div>
+<div id="outline-container-sec-3-5-2" class="outline-4">
+<h4 id="sec-3-5-2"><span class="section-number-4">3.5.2</span> Notion d'approximation bornée</h4>
+</div>
+<div id="outline-container-sec-3-5-3" class="outline-4">
+<h4 id="sec-3-5-3"><span class="section-number-4">3.5.3</span> exemples d'encodages</h4>
+</div>
+<div id="outline-container-sec-3-5-4" class="outline-4">
+<h4 id="sec-3-5-4"><span class="section-number-4">3.5.4</span> (++) découpage formelle matrice/exposant</h4>
+</div>
+<div id="outline-container-sec-3-5-5" class="outline-4">
+<h4 id="sec-3-5-5"><span class="section-number-4">3.5.5</span> (++) calculs d'erreurs d'arondis</h4>
+</div>
+<div id="outline-container-sec-3-5-6" class="outline-4">
+<h4 id="sec-3-5-6"><span class="section-number-4">3.5.6</span> (++) optimiser les erreurs d'arondis (que fait Python ?)</h4>
+</div>
+<div id="outline-container-sec-3-5-7" class="outline-4">
+<h4 id="sec-3-5-7"><span class="section-number-4">3.5.7</span> (++) bibliothèque NumPy (ou autre bibliothèque de calcul numérique)</h4>
+</div>
+</div>
+
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Données textuelles et fichiers &gt;&gt; Treillard, Mondary</h3>
+<div class="outline-text-3" id="text-3-6">
+</div><div id="outline-container-sec-3-6-1" class="outline-4">
+<h4 id="sec-3-6-1"><span class="section-number-4">3.6.1</span> Représentation d’un texte en machine.</h4>
+</div>
+<div id="outline-container-sec-3-6-2" class="outline-4">
+<h4 id="sec-3-6-2"><span class="section-number-4">3.6.2</span> Différencier les fichiers binaires, de code et de donées</h4>
+</div>
+<div id="outline-container-sec-3-6-3" class="outline-4">
+<h4 id="sec-3-6-3"><span class="section-number-4">3.6.3</span> Dictionnaires comme enregistrements</h4>
+</div>
+<div id="outline-container-sec-3-6-4" class="outline-4">
+<h4 id="sec-3-6-4"><span class="section-number-4">3.6.4</span> Importer une table depuis un fichier texte tabulé ou un fichier CSV.</h4>
+</div>
+<div id="outline-container-sec-3-6-5" class="outline-4">
+<h4 id="sec-3-6-5"><span class="section-number-4">3.6.5</span> présenter les données EXIF d’une image sous la forme d’un enregistrement</h4>
+</div>
+<div id="outline-container-sec-3-6-6" class="outline-4">
+<h4 id="sec-3-6-6"><span class="section-number-4">3.6.6</span> (++) Extraction de fichier YAML/JSON</h4>
+</div>
+<div id="outline-container-sec-3-6-7" class="outline-4">
+<h4 id="sec-3-6-7"><span class="section-number-4">3.6.7</span> (++) Extraire le code html d'une page internet dans comme un enregistrement d'enregistements</h4>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Trimestre 2 : L'algorithmique</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> tris quadratiques et lgorithmes multilinéaires sur les tableau &gt;&gt; Hafaidia, Sebkhi, Idrissi</h3>
+<div class="outline-text-3" id="text-4-1">
+</div><div id="outline-container-sec-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><span class="section-number-4">4.1.1</span> Tris par insertion</h4>
+</div>
+<div id="outline-container-sec-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2"><span class="section-number-4">4.1.2</span> Tris par sélection</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<p>
+insister sur le fait que plusieurs algos font le même travail
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-1-3" class="outline-4">
+<h4 id="sec-4-1-3"><span class="section-number-4">4.1.3</span> Tris d'une table</h4>
+</div>
+<div id="outline-container-sec-4-1-4" class="outline-4">
+<h4 id="sec-4-1-4"><span class="section-number-4">4.1.4</span> utilisation des fonctions</h4>
+</div>
+<div id="outline-container-sec-4-1-5" class="outline-4">
+<h4 id="sec-4-1-5"><span class="section-number-4">4.1.5</span> Compréhention sur les tableaux</h4>
+</div>
+<div id="outline-container-sec-4-1-6" class="outline-4">
+<h4 id="sec-4-1-6"><span class="section-number-4">4.1.6</span> manipulation un peu complexe mais (multi)linéaire de tableaux</h4>
+</div>
+<div id="outline-container-sec-4-1-7" class="outline-4">
+<h4 id="sec-4-1-7"><span class="section-number-4">4.1.7</span> (++) avant-goût des problématiques fonctionnel</h4>
+<div class="outline-text-4" id="text-4-1-7">
+<p>
+via diférents exos de map et de filtres
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-1-8" class="outline-4">
+<h4 id="sec-4-1-8"><span class="section-number-4">4.1.8</span> (++) et objet (via différents exo sur les enregistrements)</h4>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> comlexité et recherche dichotomique &gt;&gt; Yana, Lezin</h3>
+<div class="outline-text-3" id="text-4-2">
+</div><div id="outline-container-sec-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1"><span class="section-number-4">4.2.1</span> complexité du tri par insertion</h4>
+</div>
+<div id="outline-container-sec-4-2-2" class="outline-4">
+<h4 id="sec-4-2-2"><span class="section-number-4">4.2.2</span> complexité du tri par sélection</h4>
+</div>
+<div id="outline-container-sec-4-2-3" class="outline-4">
+<h4 id="sec-4-2-3"><span class="section-number-4">4.2.3</span> complexité de la recherche naive</h4>
+</div>
+<div id="outline-container-sec-4-2-4" class="outline-4">
+<h4 id="sec-4-2-4"><span class="section-number-4">4.2.4</span> recherche dichotomique</h4>
+</div>
+<div id="outline-container-sec-4-2-5" class="outline-4">
+<h4 id="sec-4-2-5"><span class="section-number-4">4.2.5</span> complexité de la recherche dichotomique</h4>
+</div>
+<div id="outline-container-sec-4-2-6" class="outline-4">
+<h4 id="sec-4-2-6"><span class="section-number-4">4.2.6</span> (++) borne d'optimalité sur la recherche</h4>
+</div>
+<div id="outline-container-sec-4-2-7" class="outline-4">
+<h4 id="sec-4-2-7"><span class="section-number-4">4.2.7</span> (++) borne d'optimalité sur les tris</h4>
+</div>
+<div id="outline-container-sec-4-2-8" class="outline-4">
+<h4 id="sec-4-2-8"><span class="section-number-4">4.2.8</span> (++) tris rapides</h4>
+</div>
+<div id="outline-container-sec-4-2-9" class="outline-4">
+<h4 id="sec-4-2-9"><span class="section-number-4">4.2.9</span> (++) complexité des tris rapides</h4>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Algorithmes gloutons &gt;&gt; Bensussan, Le Yaouanc</h3>
+<div class="outline-text-3" id="text-4-3">
+</div><div id="outline-container-sec-4-3-1" class="outline-4">
+<h4 id="sec-4-3-1"><span class="section-number-4">4.3.1</span> Rendu de monaie en euros</h4>
+</div>
+<div id="outline-container-sec-4-3-2" class="outline-4">
+<h4 id="sec-4-3-2"><span class="section-number-4">4.3.2</span> Introduir les Dictionnaires dynamiques dans cette séquence</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<p>
+par exemple pour le problème des Sac à dos avec contenu séquable ?
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-3-3" class="outline-4">
+<h4 id="sec-4-3-3"><span class="section-number-4">4.3.3</span> Sac à dos avec contenu séquable</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<p>
+On a un camion pouvant transporte jusque 5 tones, et on a t1,&#x2026;,tn tones de 
+diférents bois  de prix respectif p1,&#x2026;,pn, comment faire un voyage le plus 
+rentable possible.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3-4" class="outline-4">
+<h4 id="sec-4-3-4"><span class="section-number-4">4.3.4</span> glouton qui ne marche pas</h4>
+<div class="outline-text-4" id="text-4-3-4">
+<p>
+Rendu de florins pre-71 ou sac à dos avec contenu non séquable
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-3-5" class="outline-4">
+<h4 id="sec-4-3-5"><span class="section-number-4">4.3.5</span> (++) Prim ou Kruskal</h4>
+<div class="outline-text-4" id="text-4-3-5">
+<p>
+Arbre couvrant maximal ou plus court chemin (c'est le même algorithme
+vu de deux manière différentes). Attention, on y manipule un graphe&#x2026;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> (++) Algos pour l'IA &gt;&gt; Ligeret, Mousset</h3>
+<div class="outline-text-3" id="text-4-4">
+</div><div id="outline-container-sec-4-4-1" class="outline-4">
+<h4 id="sec-4-4-1"><span class="section-number-4">4.4.1</span> k plus proches voisins</h4>
+</div>
+<div id="outline-container-sec-4-4-2" class="outline-4">
+<h4 id="sec-4-4-2"><span class="section-number-4">4.4.2</span> (++) culture G d'IA</h4>
+</div>
+<div id="outline-container-sec-4-4-3" class="outline-4">
+<h4 id="sec-4-4-3"><span class="section-number-4">4.4.3</span> (++) descente de gradiants dans une matrice</h4>
+</div>
+<div id="outline-container-sec-4-4-4" class="outline-4">
+<h4 id="sec-4-4-4"><span class="section-number-4">4.4.4</span> (++) réduction de la dimention par agrégation de données</h4>
+</div>
+<div id="outline-container-sec-4-4-5" class="outline-4">
+<h4 id="sec-4-4-5"><span class="section-number-4">4.4.5</span> (++) Peut être envisager l'algorithme A* ?</h4>
+<div class="outline-text-4" id="text-4-4-5">
+<p>
+Attention, on doit maintenir une file d'attente, qui n'est pas au programme de 1ière
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Trimestre 3 : La programmation web</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Web et html &gt;&gt; Houot, Morel, Ndzie Ewodo</h3>
+<div class="outline-text-3" id="text-5-1">
+</div><div id="outline-container-sec-5-1-1" class="outline-4">
+<h4 id="sec-5-1-1"><span class="section-number-4">5.1.1</span> distinctions html/CSS</h4>
+</div>
+<div id="outline-container-sec-5-1-2" class="outline-4">
+<h4 id="sec-5-1-2"><span class="section-number-4">5.1.2</span> bonnes pratiques</h4>
+</div>
+<div id="outline-container-sec-5-1-3" class="outline-4">
+<h4 id="sec-5-1-3"><span class="section-number-4">5.1.3</span> formulaires</h4>
+</div>
+<div id="outline-container-sec-5-1-4" class="outline-4">
+<h4 id="sec-5-1-4"><span class="section-number-4">5.1.4</span> POST/GET</h4>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> (++) javascript</h3>
+<div class="outline-text-3" id="text-5-2">
+</div><div id="outline-container-sec-5-2-1" class="outline-4">
+<h4 id="sec-5-2-1"><span class="section-number-4">5.2.1</span> Le triplet html/CSS/javascript</h4>
+</div>
+<div id="outline-container-sec-5-2-2" class="outline-4">
+<h4 id="sec-5-2-2"><span class="section-number-4">5.2.2</span> Analyser et modifier les méthodes exécutées lors d’un clic sur un bouton d’une page Web</h4>
+</div>
+<div id="outline-container-sec-5-2-3" class="outline-4">
+<h4 id="sec-5-2-3"><span class="section-number-4">5.2.3</span> (++) code frontend et code backend</h4>
+</div>
+<div id="outline-container-sec-5-2-4" class="outline-4">
+<h4 id="sec-5-2-4"><span class="section-number-4">5.2.4</span> (++) javascript : un autre langage de programmation</h4>
+</div>
+<div id="outline-container-sec-5-2-5" class="outline-4">
+<h4 id="sec-5-2-5"><span class="section-number-4">5.2.5</span> (++) programmer en javascript</h4>
+</div>
+<div id="outline-container-sec-5-2-6" class="outline-4">
+<h4 id="sec-5-2-6"><span class="section-number-4">5.2.6</span> (++) interactions entre javascript et html</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Sur l'année</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Projet filé sur plusieurs séquence</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Breuvart Flavien</p>
+<p class="date">Created: 2019-06-22 sam. 11:21</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

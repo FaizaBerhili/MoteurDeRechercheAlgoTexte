@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Documents</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+
+  </head>
+  <body>
+    
+    <div id="main">
+      <div id="content">
+	
+<p>Here are some documents which are not subsumed by other articles, which are:</p>
+
+<ul>
+  <li>
+<a href="../Intrication.pdf">Au-delà du déterminisme dans le calcul par consommation d'intrication</a>,
+internship done in june-july 2011 at
+the <a href="https://www.liglab.fr">Laboratoire d'informatique de Grenoble</a>, under the supervision
+of <a href="http://membres-lig.imag.fr/perdrix/">Simon Perdrix</a>.</li>
+  <li>
+<a href="../soutenance/manuscript.pdf">Reductions and linear approximations</a>, my PhD manuscript.</li>
+</ul>
+
+      </div>
+    </div>
+    <!-- <div id='logo'> -->
+    <!--   <a href=/index.html> -->
+    <!-- 	<img alt='logo' src='/logo-logica.png' /> -->
+    <!--   </a> -->
+    <!-- </div> -->
+    <div id="sidebar">
+      <div id="logo">
+	<a href="../index.html">
+	  <h2>Luc Pellissier</h2>
+	  <img alt="Luc Pellissier" height="100" src="../Luc.jpg">
+	</a>
+	<!--   <a href="https://www.fing.edu.uy/imerl/inicio"> -->
+	<!--     <img alt='imerl' src='/logo-imerl.png' height='60' /> -->
+	<!--   </a>&ensp;&ensp;&ensp; -->
+	<!--   <a href="https://www.fing.edu.uy"> -->
+	<!--     <img alt='fing' src='/logo-fing.png' height='60'/> -->
+	<!--   </a> -->
+      </div>
+      <ul>
+	<li><a href="../work">Research</a></li>
+	<li><a href="../teaching">Teaching</a></li>
+        <li><a href=".">Documents</a></li>
+	<li><a href="../links">Links</a></li>
+    </ul>
+</div>
+    <!-- <div id="footer"> -->
+    <!--   Equipo de Lógica — IMERL<br> -->
+    <!--   Julio Herrera y Reissig 565 — 11300 Montevideo <br> -->
+    <!--   Uruguay -->
+    <!-- </div> -->
+  </body>
+</html>

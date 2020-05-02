@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>LIPN : séminaire CALIN (Combinatoire, algorithmique et interactions), Université Paris 13</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<link rel="canonical" href="https://lipn.univ-paris13.fr/~banderier/Seminaires/">
+<META name="LANG" content="fr">
+<META name="DESCRIPTION" content="LIPN : CALIN">
+<STYLE type="text/css">
+
+.banniere_logo {
+	width:100px;
+	height:50px;
+	margin-top: 0px;
+margin-left: 30px;
+display: block;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 10px;
+padding-top: 10px;
+font-weight: normal;
+line-height: 1em;
+font-size: 3em;
+}
+.banniere_logo a:hover {
+ color:#ffffff;
+}
+
+div#banniere_titre {
+	width:200px;
+        height:50px;
+	font-size: 3.5em;
+	line-height: 1em;
+	font-family: 'Titillium Maps',Arial;
+	/*text-shadow: #333;*/
+	color: #fff;
+	margin-left: 250px;
+	margin-top: -60px;
+}
+
+div#banniere_menu {
+margin-left: 170px;
+	margin-right: 20px;
+	float:right;
+margin-top: -10px;
+	/*margin-top: -70px;
+	/*margin-top: -200px;
+	margin-left: 600px;*/
+}
+
+div#banniere_logo_p13 {
+	margin-right: -260px;
+	float:right;
+	margin-top: -80px;
+}
+div#banniere_logo_cnrs {
+	margin-right: -60px;
+	float:right;
+	margin-top: -60px;
+}
+div#banniere_logo_paris_cite {
+	margin-right: -120px;
+	float:right;
+	margin-top: -60px;
+}
+
+
+BODY {
+  color: black;
+  text-align: justify;
+  background: white url(/common/LIPNbg12.GIF) repeat;
+  margin: 1em;
+}
+
+FONT.redblink { 
+	color: red; 
+	text-decoration: blink;
+}
+
+TABLE.two-column {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+TD.title {
+  border: 0px;
+  text-align: center;
+}
+
+TD.buttonb{
+	  background-color: rgb(0,230,255); 
+	    color: black;
+	      border: solid 1px black;
+		  font-size: 85%;
+		    text-align: center;
+		      width: 8%;
+	      }
+	      
+TD.button {
+  background-color: rgb(0,230,255); 
+  color: black;
+  border: solid 1px black;
+  font-size: 85%;
+  text-align: center;
+  width: 8%;
+}
+TD.inactive {
+  background-color: rgb(245,245,245); /* white smoke */
+  border: solid 1px black;
+  color: black;
+}
+A.button {
+  color: black;
+  display : block;
+  text-decoration: none;
+}
+A.buttonb {
+	  color: black;
+	    display : block;
+	      text-decoration: none;
+      }
+
+
+TD.current {
+  background-color: rgb(255,204,51); 
+  border: solid 1px rgb(0,0,128); /* navy blue */
+}
+
+DIV.centered {
+  text-align: center;
+}
+DIV.footer {
+  font-size: small;
+  font-style: oblique;
+}
+HR.no-banner {
+  background-color: rgb(0,230,255); 
+  border: solid 1px black;
+  height: 8px;
+}
+HR.yellow {
+  background-color: rgb(255,204,51); 
+  border: none;
+  height: 1px;
+}
+
+.background-blue {
+  background-color: rgb(0,230,255); 
+}
+.background-smoke {
+  background-color: rgb(245,245,245); 
+}
+.background-yellow {
+  background-color: rgb(255,204,51); 
+}
+
+a:hover, a:active {
+        color: #cc33cc;
+        }
+div.header div.Paris13 {
+  position:static;
+  left:10px;
+  top:80px;
+  margin-left:10px;
+  width: 142px;
+  height: 37px;
+  background: transparent url(/common/logoP13Petit.GIF) no-repeat top left;
+}
+div.header div.Paris13 span {
+  display:none ;
+}
+div.header div.CNRS span {
+  display:none ;
+}
+div.header {
+text-align:center;
+height:40px;
+margin-top:30px;
+margin-bottom:0px;
+}
+
+div.header2 {
+text-align:center;
+height:45px;
+margin-top:10px;
+margin-bottom:0px;
+}
+
+div.header span.HeaderWhere span{
+font-size: 200%;
+font-weight: bold;
+}
+
+h1 {
+  margin: 20px 20px 10px 10px;
+}
+div.container {
+  margin-left:20px;
+  margin-right:20px;
+}
+
+div.container div.summary {
+  background: #e0e0e0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid 1pt;
+  font-size: 10pt;
+  font-family: sans;
+  margin:0px;
+  text-align:justify;
+}
+div.intro {
+  background: #ffc0c0;
+  padding: 10px;
+  margin:10px 50px;
+  text-align:justify;
+  border: solid;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a.info > span
+{
+margin-top: 1em;
+display:none;
+}
+
+a.info:hover > span
+{
+text-decoration:none;
+background:#ffffff;
+}
+
+a.info >  span
+{
+}
+
+a.info:hover > span
+{
+/* display:inline; */
+position:relative;
+margin-top: 1em;
+left:0px;
+}
+
+div.abstract 
+{
+padding:1em;
+color:#505560;
+margin-bottom: .7em;
+background:#f4f5f6;
+border: #aaaaaa 1px solid;
+}
+
+
+</STYLE>
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type="text/javascript"></script>
+<script type="text/x-mathjax-config">  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+</HEAD>
+<BODY>
+<P>
+<div style="text-align: center;">
+   <H3><a href="https://lipn.univ-paris13.fr/~banderier/Seminaires/">Journée-séminaire de combinatoire</a></h3>
+<h4>(équipe CALIN du LIPN, université Paris-Nord, Villetaneuse)</h4>
+</div>
+
+
+Le 12 juin 2018 à 14h00 en B107, <a href="/~tollu/">Christophe Tollu</a> nous parlera de : <em><b>Th&eacute;orie g&eacute;om&eacute;trique de la complexit&eacute; (2)</b></em><P><em>Résumé :</em> La théorie géométrique de la complexité (GCT) est un programme de recherche lancé par K. Mulmuley et M. Sohoni aux alentours de 2000 pour attaquer la variante algébrique, due à L. Valiant, de la conjecture centrale de la théorie de la complexité, l'hypothèse de Cook
+$P \neq NP$. Ce programme substitue aux hypothèses de Cook et de Valiant une conjecture de nature géométrique, à laquelle les formidables outils de la géométrie algébrique et de la théorie des représentations peuvent être appliqués. Dans l'esprit de ses promoteurs,
+la GCT avait aussi pour but de permettre de démontrer l'existence de minorants de complexité ("lower bounds" en franglais) par la production effective de témoins. Dans ce mini-tutoriel sur la GCT, je présenterai le programme initial de Mulmuley-Sohoni, quelques-uns
+des développements récents et des obstacles qui sont apparus dans sa réalisation. 
+ Aucune compétence particulière en géométrie ou en théorie des représentations n'est requise des participants. 
+<p>
+
+<HR class="yellow">
+
+<table class=CENTERED width="100%">
+<TR><td><SMALL><i>Derni&egrave;re modification : </i> dimanche 17 juin 2018  </SMALL> </td>
+
+<td>
+<A href="https://validator.w3.org/check?uri=referer"> 
+
+<IMG style="border:0"
+          src="/common/valid-html401.png"
+          alt="Valid HTML 4.01!" height="15" width="45">
+</A>
+
+<a href="https://jigsaw.w3.org/css-validator/check/referer">
+                     <img style="border:0;width:45px;height:15px"
+                  src="/common/vcss.png"
+                  alt="Valid CSS!">
+              </a></TD>
+<td><SMALL>
+Contact : <a href="/~banderier/">Cyril.Banderier</a> <i>at</i> lipn.univ-paris13.fr</SMALL></TD>
+
+<td>
+<form method="GET" action="https://www.google.fr/search">
+<div><input maxlength=20 name=q value=""  size=20>
+<input type=hidden name=sitesearch value="lipn.univ-paris13.fr">
+<input type=SUBMIT value="Rechercher sur le site">
+</div>
+</form>
+</td>
+</tr>
+</table>
+
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3376402-1";
+urchinTracker();
+</script>
+</BODY>
+</HTML>

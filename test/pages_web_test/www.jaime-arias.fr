@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jaime Arias - About</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://www.jaime-arias.fr/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.jaime-arias.fr/theme/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.jaime-arias.fr/theme/css/academicons.min.css" type="text/css" />
+
+    <!-- favicon -->
+    <link rel="icon" href="https://www.jaime-arias.fr/theme/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+
+<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://www.jaime-arias.fr/" id="logo"><span class="site-title">Jaime Arias</span></a>
+      <nav id="main-nav">
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/">About</a>
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/pages/publications.html">Publications</a>
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/pages/software.html">Software</a>
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/pages/projects.html">Projects</a>
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/pages/service.html">Service</a>
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/pages/students.html">Students</a>
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/pages/talks.html">Talks</a>
+            <a class="main-nav-link" href="https://www.jaime-arias.fr/pages/contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+      <div id="container">
+        <div class="outer">
+<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="https://www.gravatar.com/avatar/aaadfe47f4560936f5f2a75cda9bcc32?s=200">
+      <h2 id="name">Jaime Arias</h2>
+      <h3 id="title">CNRS Research Engineer</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Villetaneuse - France</span>
+      <a id="follow" href="https://github.com/himito" target="_blank">Follow</a>
+    </div>
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+              <td><a href="https://www.researchgate.net/profile/Jaime_Arias_Almeida" target="_blank" title="researchgate"><i class="ai ai-researchgate"></i></a></td>
+              <td><a href="https://scholar.google.com.co/citations?user=r7ZbWJYAAAAJ" target="_blank" title="scholar"><i class="ai ai-google-scholar"></i></a></td>
+              <td><a href="https://github.com/himito" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+              <td><a href="http://fr.linkedin.com/in/JaimeAriasAlmeida" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></td>
+              <td><a href="http://twitter.com/jearias89" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+<section id="main">
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            <header class="article-header">
+                <h1 class="article-title" itemprop="name">About</h1>
+            </header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>I am a <strong>CNRS research engineer</strong> working for the <a class="reference external" href="https://lipn.univ-paris13.fr/accueil/equipe/lcr">LoVe</a> research group of
+<a class="reference external" href="https://lipn.univ-paris13.fr">LIPN</a> at <a class="reference external" href="https://www.univ-paris13.fr/">Université Sorbonne Paris Nord</a>. I did my Ph.D under
+the supervision of <a class="reference external" href="http://www.labri.fr/perso/myriam">Myriam Desainte-Catherine</a> and <a class="reference external" href="http://cic.puj.edu.co/~crueda/camilo">Camilo Rueda</a> at
+<a class="reference external" href="https://www.labri.fr/">LaBRI</a>.  Prior to that, I received the engineer degree in both Computer
+Science and Electronics from <a class="reference external" href="http://www.javerianacali.edu.co">Universidad Javeriana</a> under the supervision
+of <a class="reference external" href="https://sites.google.com/site/carlosolarte">Carlos Olarte</a> and <a class="reference external" href="http://www.javerianacali.edu.co/profile/eugenio-tamura">Eugenio Tamura</a>.</p>
+<p>I am also a member of the <a class="reference external" href="http://cic.javerianacali.edu.co/wiki/doku.php?id=grupos:avispa:avispa">AVISPA</a> research group.</p>
+<p>Here you can find my <a class="reference external" href="https://www.jaime-arias.fr/pdfs/resume.pdf">curriculum vitae</a>.</p>
+<div class="section" id="research-interests">
+<h2>Research Interests</h2>
+<p>My research interests include:</p>
+<ul class="simple">
+<li>Formal specification and verification of timed and reactive concurrent systems</li>
+<li>Interactive multimedia systems</li>
+</ul>
+</div>
+
+            </div>
+
+        </div>
+    </article>
+</section>
+
+
+<aside id="sidebar">
+    <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>        </div>
+      </div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020<br>
+      Powered by <a href="http://getpelican.com/">Pelican</a>. Theme by <a href="https://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+<!-- javascript -->
+<script src="https://www.jaime-arias.fr/theme/js/script.js"></script>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,545 @@
+
+<HR>
+<UL>
+<body TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#4200DA" VLINK="#551A8B"
+      ALINK="#CC33CC" BACKGROUND="../../equipes/OCAD/image/LIPNbg12.GIF">
+
+<CENTER><title>Abstracts of talks at the Braga IFIP WG1.3 meeting</title>
+
+<H2>Abstracts of talks at the Braga IFIP WG1.3 meeting (March 23-24, 
+2007)</H2>
+</CENTER>
+
+=== Friday, March 23rd, 2007
+<LI>1 - <a name="MartiOliet">Narciso MARTI-OLIET</a> 
+<BR>Algebraic simulations   	
+(<A HREF="BRAGA-DATA/MartiOliet-ifip07-algebraic-sim.pdf">slides</A>)
+<BR>(joint work with Jose Meseguer and Miguel Palomino)
+<BR><BR>
+In the first part of the talk we describe generalizations of
+simulations in threedirections. First, by avoiding negation we relax
+the condition on preservationof atomic properties from equality to
+containment; second, we considerstuttering simulations, which are
+useful to relate concurrent systems withdifferent levels of
+atomicity; third, we allow different alphabets AP and AP' ofatomic
+propositions so that an atomic proposition in AP is mapped to a
+stateformula over AP'.  A categorical viewpoint is the most natural
+to understandand organize these generalized simulations.
+<BR><BR>
+In the second part of the talk we prove several representability
+resultsshowing that any Kripke structure can be represented by a
+rewrite theory,and that any generalized simulation can be represented
+by a rewrite relation.We consider four increasingly more general ways
+of defining simulationsin rewriting logic: equational abstractions,
+theory interpretations, simulationmaps as equationally defined
+functions, and simulations given by rewriterelations. The first two
+techniques have been studied in detail in previouspapers. The third
+one is illustrated here by means of an example showingthat a stack
+machine correctly implements the operational semantics for asimple
+functional language. The fourth one is also illustrated by means ofa
+communication protocol example proving in-order delivery of messages
+inthe presence of an unreliable medium.
+<BR><BR>
+References:
+<BR> J. Meseguer, M. Palomino, and N. Marti-Oliet. 
+Equational abstractions (extended version)
+<BR> J. Meseguer, M. Palomino, and N. Marti-Oliet. 
+Algebraic Simulations 
+<BR><BR> Both are available from 
+<A HREF=http://maude.sip.ucm.es/~miguelpt">here</A>
+</LI>
+<BR>------------------------------------------------------
+<LI>2 - <a name="Petrucci">Laure PETRUCCI</a> 
+<A HREF="http://www-lipn.univ-paris13.fr/~petrucci/">web page</A>
+<BR>Modular construction of symbolic observation graph
+<BR>(joint work with Kais Klai)
+<BR><BR>
+Model checking for Linear Time Logic (LTL) is usually based
+onconverting the property into a Buchi automaton (or
+tableau),composing the automaton and the model, and finally checking
+foremptiness of the language of the composed system. The last step
+isthe crucial stage of the verification process because of the
+stateexplosion problem, i.e. the exponential increase of the
+numberof states w.r.t. the number of system components. 
+<BR>
+In thiswork,
+we present a symbolic and modular solution which builds, in a
+modularway, an observation graph represented in a non-symbolic way
+but where thenodes are essentially symbolic sets of states and the
+edges either labelled byevents occurring in the formula or by
+synchronisation actions between thesystem components. Due to the
+small number of events to be observed in atypical formula, this graph
+has a very moderate size and thus the complexitytime of verification
+is negligible w.r.t. the time to build the observationgraph. 
+<BR>
+The preliminary evaluations we have achieved on standard examples
+showthat our method outperforms both a non modular generation of the
+symbolicgraph and the pure symbolic methods.
+</LI>
+<BR>------------------------------------------------------
+<!--
+<LI>3- <a name="LeGall">Pascale LE GALL</a> 
+<BR>A formal definition of complex softwares
+<BR>(joint work with Marc Aiguier)
+<BR><BR>
+<BR>
+</LI>
+<BR>------------------------------------------------------
+-->
+<LI>4 - <a name="Gaudel">Marie-Claude GAUDEL</a> 
+<A HREF="BRAGA-DATA/Gaudel-Braga0307.ppt">slides</A>
+<BR>Uniform random sampling of traces in very large models
+<BR>(joint work with Alain Denise, Sandrine-Dominique Gouraud, 
+Richard Lassaigne, Sylvain Peyronnet)
+<BR><BR>
+This talk presents some first results on how to perform uniformrandom
+walks (where every trace has the same probability to occur) invery
+large models.  The models considered here are described in asuccinct
+way as a set of communicating reactive modules.  The methodrelies
+upon techniques for counting and drawing uniformly at randomwords in
+regular languages.  Each module is considered as an automatondefining
+such a language.  It is shown how it is possible to combinelocal
+uniform drawings of traces, and to obtain some global uniformrandom
+sampling, without construction of the global model.
+<BR>
+</LI>
+<BR>------------------------------------------------------
+<LI>5 - <a name="Gnesi">Stefania GNESI</a> 
+<A HREF="http://fmt.isti.cnr.it/~gnesi/">web page</A>
+<BR>A model checking approach for designing asynchronous extension of SOAP
+<BR>(joint work with Maurice ter Beek, and Franco Mazzanti)
+<BR><BR>
+In this talk an action-state based logical framework for the analysis
+andverification of complex systems that relies on the definition of
+doublylabeled transition systems. The defined logic combines the
+actionparadigm, classically used for describing systems using
+labeledtransitions systems together with the predicates that are true
+overstates as captured using Kripke structures as semantic model.An
+efficient model checker for this logic has been realized exploiting
+anon the fly algorithm. In the end of the talk the use of the logic
+andits model checker in the design phase of an asynchronous extension
+ofSOAP is shown.
+</LI>
+<BR>------------------------------------------------------
+<LI>6 - <a name="Mery">Dominique MERY</a> 
+<BR>Generic developments
+<BR>(joint work with Dominique Cansell)
+<BR><BR>
+Proof-oriented system development  aims to reinforce standard  methods
+for the   design of computer-based systems  through  formal description and
+analysis  techniques   that  can help   to   ensure  higher  levels of
+reliability   and correctness.      Based on  a   precise mathematical
+semantics, it offers     powerful techniques for  the  validation  and
+analysis   of system   models,  including  comprehensive  testing  and
+verification that accompany and   guide the development process.   We
+focus  on  the  security  of information  systems,  trustworthy system
+functionality  and   the  validation   and   verification  (and  their
+communication) of security   and   trustworthiness;   we   consider
+distributed algorithms  as    a class  of  systems to     develop in a
+proof-based way.  We aim to justify confidence of measures in security
+of information systems and trustworthy system functionality though the
+concept of refinement.
+<BR><BR>
+The design  of systems of realistic scale  requires models to be built
+at different levels of abstraction and detail. In a formal approach to
+system development, these  models are related   by the key concept  of
+\emph{refinement},  which ensures  that  properties established at  an
+abstract level are   preserved by the implementation.  The  refinement
+relationship between  system   specifications   is established   by  a
+rigorous \emph{proof} showing that the class of models of the concrete
+specification is contained in the class of models of the abstract one.
+<BR><BR>
+The benefits of an approach based on refinement are numerous: from the
+point  of  view of  the  system developer, system requirements  can be
+addressed  in  several steps (or  cycles)   of system development, and
+feedback  on the properties  of the current  model of the system or on
+design errors is  obtained quite early. From  the point of view of the
+verifier, the burden of proof is spread  over the development process,
+and the preservation  of  key properties such  as safety,  security or
+availability is guaranteed. The presence of intermediate system models
+both reduces  the complexity of the proof  obligations (allowing for a
+higher degree  of automation) and  produces a trace  of \textit{ milestones}
+ during the development of a system, documenting the design
+<BR><BR>
+The overall goal of a proof-oriented development process for improving
+the quality of computer-based systems translates into a number of
+individual key challenges along which our progress should be measured:
+<BR>
+- integrate proof techniques in the development process,
+<BR>- apply refinement throughout the development process, from the
+  elaboration of the requirements to obtaining efficient code.
+<BR>- combine certified components through refinement and genericity,
+<BR>- provide proven  methodological guides  validated by proof process, 
+namely proof-based design patterns
+<BR>- validate the approach through  realistic  case studies, with emphasis 
+on distributed systems and algorithms  for system engineering 
+<BR><BR>
+The talk focuses on  the \textit{refinement} of event-based models and
+aims to  develop new features related  to the refinement,  such as the
+re-usability  of  refinement-based  development,  the  definition   of
+proof-based design patterns  and the   development of case    studies,
+especially  related to  distributed   systems. We  intend  to  develop
+specific proof-based  patterns from case   studies to generalize  into
+objects called   generic developments.  We  illustrate applications by
+replaying developments for greedy algorithms.
+</LI>
+<BR>------------------------------------------------------
+<LI>7 - <a name="Barbosa">Luis Soares BARBOSA</a> 
+<A HREF="http://www.di.uminho.pt/~lsb/lsbIFIP07.pdf">slides</A>
+and <A HREF="http://www.di.uminho.pt/~lsb/">web page</A>
+<BR>Revisiting invariants
+<BR>(joint work with JosÈ N. Oliveira and Alexandra Silva )
+<BR><BR>
+We discuss the usefulness of reasoning about invariants for
+softwarecomponentscoalgebraically in the allegory of binary
+relations.
+<BR>
+The novelty of our approach consists in establishing a
+synergy betweena relational construct, Reynolds' «relation on
+functions» involved inhis abstraction theorem (traditionally employed
+in explaining and reasoningabout parametric polymorphism),and the
+coalgebraic approach to bisimulations and invariants.
+<BR><BR>
+This synergy arises from the fact that, once
+pointfree-transformed,formulae in one domain «look like» others in
+the other domain.We stress on this syntactic aspect of formal
+reasoning,a kind of "let-the-symbols-do-the-work" style of
+calculation, often neglectedby too much emphasis on domain-specific,
+semantic concerns.
+</LI>
+<BR>------------------------------------------------------
+<LI>8 - <a name="Schroeder">Lutz SCHROEDER</a> 
+<A HREF="BRAGA-DATA/Schroeder-cml-slides.pdf">slides</A>, 
+<A HREF="http://www.informatik.uni-bremen.de/~lschrode/papers/rank01PSPACE.pdf">paper</A>
+and 
+<A HREF="http://www.informatik.uni-bremen.de/~lschrode/">web page</A>
+<BR>A semantic PSPACE criterion for coalgebraic modal logic
+<BR><BR>
+Upper complexity bounds for modal logics are often an intricate issue
+treated with a wide range of frequently ad-hoc techniques. As
+domain-specific modal logics (often non-normal) abound in the literature
+and new ones appear at regular intervals, it is therefore desirable to
+develop a generic algorithmic framework for deriving such bounds
+systematically. Here, we present a semantics-based criterion for modal
+logics whose axioms do not nest modal operators to be decidable in
+PSPACE, typically a tight upper bound; the generality of our
+approach is based on a coalgebraic semantics. This result complements an
+earlier tableau-based method and extends the class of logics covered by
+generic techniques. In some cases, e.g. conditional logics, the
+semantic criterion is established very easily, and in others, notably
+various logics of quantitative uncertainty, it follows by dissecting
+off-the-shelf results. Thus, our method allows establishing
+PSPACE-completeness of a wide range of logics with only moderate
+effort.
+</LI>
+<BR>------------------------------------------------------
+<LI>9 - <a name="Kurz">Alexander KURZ</a> 
+<A HREF="http://www.cs.le.ac.uk/people/akurz/">web page</A>
+<BR>A characterisation of modal logics of rank 1
+<BR>(joint work with J. Rosicky)
+<BR><BR>
+We show that a functor on a variety has a finitary presentation by
+operationsand equations if and only if this functor preserves sifted
+colimits. Moreover,from the proof it follows that this presentation
+is by equations of rank 1 (anequation is of rank 1 if each variable
+is in the scope of precisely one modaloperator). We also remark that
+on the variety of Boolean algebras siftedcolimit preserving functors
+and filtered colimit preserving functors (almost)coincide.
+<BR><BR>
+This is joint work with J. Rosicky and one of the results of our paper
+onStrongly complete logics for coalgebras, available from my
+homepage.
+</LI>
+<BR>------------------------------------------------------
+<LI>10 - <a name="Roggenbach">Markus ROGGENBACH</a> 
+<A HREF="BRAGA-DATA/Roggenbach-vortrag.pdf">slides</A>, 
+<A HREF="http://www.cs.swan.ac.uk/~csmarkus/">Markus's web page</A> and 
+<A HREF=" http://staff.aist.go.jp/y-isobe/">Yoshinao's web page</A>
+<BR>CSP-Prover 
+<BR>(joint work with Yoshinao Isobe)
+<BR><BR>
+In this talk, we discuss the generic architecture of the tool
+CSP-Prover, some of its applications, and first steps towards
+extending it to a CSP-CASL prover.
+<BR><BR>
+CSP-Prover was first introduced at TACAS 2005. 
+It provides a generic interactive theorem proving environment for the
+process algebra CSP. The tool is based on the theorem prover
+Isabelle. Our 
+<A HREF="http://staff.aist.go.jp/y-isobe/CSP-Prover/CSP-Prover.html">Web-Page</A>
+provides some sample case studies of theoretical and of industrial 
+nature.
+<BR><BR>
+With the help of CSP-Prover we developed and verified the first
+complete axiomatic semantics for the CSP stable failures model (see
+CONCUR 2006). The proof involves sequentialisation and normalization
+of processes, also a new normal form needs to be introduced.
+<BR><BR>
+Finally, we show how to combine CSP-Prover with the CASL tool Hets in
+order to obtain a CSP-CASL prover. First experiments with carefully
+selected examples demonstrated that the approach to be feasable.
+</LI>
+<BR>------------------------------------------------------
+<LI>11 - <a name="Bidoit">Michel BIDOIT</a> 
+<A HREF=" http://www.lsv.ens-cachan.fr/~bidoit/">Michel's web page</A> and
+<A HREF="http://www.pst.ifi.lmu.de/~hennicke/">Rolf's web page</A>
+<BR>A formal foundation for contract-based software components
+<BR>(joint work with Rolf HENNICKER)
+<BR><BR>
+We propose a rigorous formal foundation for contract-based
+software components used in sequential systems. Our approach
+is abstract in the sense that it focuses on the general
+characteristic aspects of components, like hiding of component
+implementations by means of provided and required interfaces,
+and thus can be reused for the semantical foundation of
+concrete component models incorporating contracts.
+<BR><BR>
+In our framework contracts are represented by interface
+specifications containing a distinguished set of ``observers'' that
+are used to specify, from the user's point of view,
+observable invariants of an interface as well as application
+conditions and observable effects of the interface methods.
+<BR><BR>
+Semantically, we adopt classical concepts of mathematical logic
+using models, in our framework given by labelled transition systems
+with ``states as algebras'', sentences, given by invariants and
+behaviour specifications of methods, and a satisfaction relation
+which characterizes the observable properties of models.
+Intuitively, a component is ``correct'' if its implementation respects
+its provided interface specification (for any correct realization of the
+component's required interface). On the given semantical
+basis this correctness notion can be easily formalized by requiring
+that the component implementation induces a transition system
+(for any model of the required interface specification) which is also
+a model of the provided interface specification of the component.
+</LI>
+======================================================================
+<BR>== Saturday, March 24rd, 2007
+<LI>12 - <a name="Gadducci">Fabio GADDUCCI</a> 
+<A HREF="BRAGA-DATA/wg1_3gGadducci.pdf">slides</A> and 
+<A HREF="http://www.di.unipi.it/~gadducci/">web page</A>
+<BR>
+(Towards) An institution for graph transformation
+<BR><BR>
+Institutions are a powerful formalism relating to the <em>Abstract
+ModelTheory for Specification and Programming</em>, as the title of
+the seminalwork by Burstall and Goguen states. The DPO approach to
+rewriting pursues asimilar aim with respect to "abstraction", since
+it recasts the classicalingredients of rewriting (rules and their
+application, substitutions, and soon) in a general categorical
+formalism.
+<BR><BR>
+After revising the standard theories for the institution of algebraic
+specifications and of term rewriting systems, the talk introduces two
+alternatives proposals (based on multi-algebras and monoidal
+categories,respectively) for providing an institution to DPO
+transformation systemsbased on various graph-like structures. These
+proposals are then compared,and their relative meritsdiscussed.
+</LI>
+<BR>------------------------------------------------------
+<LI>13 - <a name="Mossakowski">Till MOSSAKOWSKI</a> 
+<A HREF="http://www.informatik.uni-bremen.de/~till/">web page</A>
+<BR>Heterogeneous proof scripts
+<BR><BR>
+The heterogeneous tool set integrates various languages, logics
+andproof tools. So far, proof management has been session based,
+usinga graphical user interface. A proof script language (like the
+onesused by current interactive theorem provers) has the
+advantagethat proof developments are made explicit and can be re-used
+forlater developments. We introduce such as proof script language
+forHets. It combines proof commands for the structured level
+(usingthe development graph calculus) with local theorem provers
+forspecific logics. Proof scripts for the latter can be embedded
+intothe scripts for Hets, such that we arrive at heterogeneous
+proofscripts.
+<BR><BR>
+Hets is available under:
+<A HREF=http://www.dfki.de/sks/hets">here</A>
+</LI>
+<BR>------------------------------------------------------
+<LI>14 <a name="Pattinson">Dirk PATTINSON</a> 
+<A HREF="http://www.doc.ic.ac.uk/~dirk/Talks/">slides</A> and 
+<A HREF="http://www.doc.ic.ac.uk/~dirk/">web page</A>
+<!--<A HREF="http://www.pst.ifi.lmu.de/personen/pattinso/">web page</A>
+-->
+<BR>Eating, or: programmming with bi-inductive types
+<BR>(joint work with P. Hankock and N. Ghani)
+<BR><BR>
+We define representations of continuous functions
+on infinite streams of discrete values, both in the case of
+discrete-valued functions, and in the case of stream-valued
+functions.  We define also an operation of the representations of
+two continuous functions between streams that yields a
+representation of their composite.
+<BR><BR>
+In the case of discrete-valued functions, the representatives are
+well-founded (finite-path) trees of a certain kind. The underlying
+idea can be traced back to Brouwer's justification of bar-induction, or
+to Kreisel and Troelstra's elimination of choice-sequences.
+In the case of stream-valued functions, the representatives are
+non-wellfounded trees pieced together in a coinductive fashion from
+well-founded trees.  The definition requires an alternating fixpoint
+construction of some interest.
+<BR><BR>
+In neither case are the representatives unique.
+There may be many distinct representatives of extensionally the same
+function. Nevertheless, the distinctions between them capture
+genuine differences in computational behaviour.
+<BR><BR>
+These representations (the data structures and their decoding
+functions) have a simple (if imperfect) expression in a functional
+programming language such as Haskell.
+</LI>
+<BR>------------------------------------------------------
+<LI>15 - <a name="Sabadini">Nicoletta SABADINI</a> 
+<A HREF="http://dscpi.uninsubria.it/staff/Walters/Publications/Lectures">slides</A> 
+and <A HREF="http://dscpi.uninsubria.it/staff/Sabadini">web page</A>
+<!--
+<A HREF="http://www.unico.it/~sabadini/">web page</A>
+-->
+<BR>Compositionality, and independence in automata
+<BR>(joint work with RFC Walters)
+<BR><BR>
+The main goal of our work is to build nets of systems (automata)
+ communicating through interfaces with the following characteristics:
+<BR> spatial distribution
+<BR> compositionality
+<BR> changing topology (connections/components)
+<BR> hierarchy
+<BR>and hence
+<BR>Models of distributed complex systems.
+<BR><BR>
+In this lecture I discuss the investigation of the notion of
+independence of actions, in distributed systems, where
+the independence varies over time.
+<BR><BR>
+The classical automata model for analysing independence is that
+of Asynchronous Automata. This model has two defects:
+<BR>i) it is not compositional (the separate "automata" making up
+an asynchronous automaton do not in fact exist separately as
+automata but just as statespaces),
+<BR>ii) the independence relation is fixed.
+<BR><BR>
+I describe first how this non-compositional model may be made
+compositional in the context of spans of graphs.
+<BR><BR>
+This suggests a definition of independence of actions in the more
+general setting of Span(Graph) - actions are independent if they
+are performed by different (parallel) subautomata, and when they are performed
+performed there is no non-trivial communication between
+these subautomata.
+<BR><BR>
+I then introduce Cospans of graphs to model reconfiguration of
+networks of automata. With the algebra of spans and cospans
+of graphs we analyse a classical example of varying independence,
+namely the Producer-Consumer Problem.
+</LI>
+<BR>------------------------------------------------------
+<LI>16 - <a name="Walters">Robert WALTERS</a> 
+<A HREF="http://dscpi.uninsubria.it/staff/Walters/Publications/Lectures">slides</A> and
+<A HREF="http://dscpi.uninsubria.it/staff/Walters">web page</A>
+<!--<A HREF="http://www.unico.it/~walters/">web page</A>
+-->
+<BR>On compositionality for automata: (i) infinite states and (ii) morphisms
+<BR>(joint work with M. Menni and N Sabadini)
+<BR><BR>
+Compositionality
+<BR><BR>
+Consider a category E of ?state spaces? of systems.
+(For example, Graphs.) We are interested in building systems
+from parts.
+The usual operations are:
+<BR>    limits (parallel)
+<BR>    colimits (sequential).
+<BR><BR>
+With these operations a system is presented as a
+graph-shaped diagram of parts(wysiwig, goto, geometric).
+<BR><BR>
+Compositionality means instead an algebra in which systems
+are represented as expressions. Systems are put together using
+meaningful operations, giving a hierarchical structure.
+<BR><BR>
+We have a proposal for an abstract algebra for both finite
+limits and finite colimits, namely the well-supported compact
+closed structures of Spans(E) and Cospans(E). The reason is that
+Cospans(finite diagrams in E) is the free wscc category on the
+underlying graph of E, and limit: Cospans(diagrams)->Span(E)
+and colimit:Cospans(diagrams)->Cospan(E) are wscc functors.
+<BR><BR>
+(i) Infinite State systems with finite control
+<BR><BR>
+We give an examples of
+structures with finite control,including Turing machines,
+which may be expressed compositionally in this way.
+<BR><BR>
+A useful fact is that extensive categories with products have
+pullbacks with codomain a finite sum of terminals. The category
+of functions computable by straight-line programs from some data
+types is such a category.
+<BR><BR>
+(ii) Morphisms
+The above discussion of compositionality refers to the composition
+of systems but not to their morphisms, which rquires understanding
+better the monoidal bi-category structure of cospans.
+As a first step in that investigation we prove a universal
+property of the monoidal 2-category of cospans of finite linear
+orders and surjections. This involves a 2-dimensional generalization
+of the notion of Frobenius algebra.
+</LI>
+<BR>------------------------------------------------------
+<LI>17 - <a name="Sassone">Vladimiro SASSONE</a> 
+<A HREF="BRAGA-DATA/Sassone-ptrustPresIFIP.pdf">slides</A> and
+<A HREF="http://www.cogs.susx.ac.uk/users/vs/">web page</A>
+<BR>A Bayesian model for event-based trust
+<BR>(based on joint work with K. Krukow and M. Nielsen)
+<BR><BR>
+We focus on systems where trust in a computational entity
+isinterpreted astheexpectation of certain future behaviour based on
+behavioural patterns of thepast, and concern ourselves with the
+foundations of such probabilisticsystems. In particular, we aim
+atestablishingformal probabilistic models for computational trust
+and their fundamentalproperties. We define a mathematical measure for
+quantitatively comparing theeffectiveness of probabilistic
+computational trust systems in variousenvironments. With this
+foundation in place, we formalise a general notion ofinformation
+about past behaviour, based on event structures. This yields a
+flexible trust model where the probability of complex protocol
+outcomes canbeassessed.
+</LI>
+<BR>------------------------------------------------------
+<LI>18 - <a name="Montanari">Ugo MONTANARI</a> 
+<A HREF="http://www.di.unipi.it/~ugo/">web page</A>
+<!-- Dipartimento di Informatica,University of Pisa -->
+<BR>Style-Based Reconfigurations of Software Architectures as Term Rewriting
+<BR>(joint work with Roberto Bruni, Alberto Lluch Lafuente, Pisa
+and Emilio Tuosto, Leicester)
+<BR><BR>
+We present a graph-based approach to deal with the designof
+reconfigurable software architectures. The key featureswe promote
+are: (i) hierarchical design; (ii) soft constraintsfor modeling QoS
+attributes; (iii) style-preserving reconfigurations;(iv) rule-based
+approach; and (v) algebraic presentation.Roughly, actual
+architectures are modeled bygraphs with port and attribute nodes
+through which componentedges are connected. Uniformly, QoS
+constraintson attributes are also modeled as edges. Architectures
+aredesigned hierarchically by a set of edge replacement rulesthat
+fix the architectural style. Depending on their reading,productions
+allow: (i) top-down design by refinement, (ii)bottom-up typing, and
+(iii) algebraic composition of typedarchitectures, with terms
+corresponding to style proofs. Moreover,productions exploit
+constraint primitives that can beused in the refinement phase, e.g.,
+to reserve a certain amountof resources or to postpone architectural
+decisions. Similarly,reconfigurations are modeled as graph
+transformationstriggered by constraints primitives to guarantee that
+certainlevels of QoS are mantained. The main contributionis showing
+that we can take advantage by exploiting styleswhen specifying
+reconfigurations: (i) by giving hierarchicalspecifications that
+exploit the classes introduced by thestyle, (ii) by guaranteeing that
+all reconfigurations are style-preserving,(iii) by expressing
+reconfigurations as ordinaryterm rewrite rules on the algebra of
+style proofs. Overall,this results in a simple and formal mechanism
+for designingarchitectures according to a style, for checking that
+anarchitecture is an instance of a style and for ensuring
+stylepreservation during reconfigurations.
+</LI>
+<BR>------------------------------------------------------

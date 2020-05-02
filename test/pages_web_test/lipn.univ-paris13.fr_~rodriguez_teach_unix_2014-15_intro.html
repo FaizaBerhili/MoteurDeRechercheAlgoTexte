@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.8.1: http://docutils.sourceforge.net/" />
+<title>Introduction to Unix</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7056 2011-06-17 10:50:48Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="introduction-to-unix">
+<h1 class="title">Introduction to Unix</h1>
+
+<div class="section" id="this-course">
+<h1>0&nbsp;&nbsp;&nbsp;This course</h1>
+<div class="section" id="contact">
+<h2>0.1&nbsp;&nbsp;&nbsp;Contact</h2>
+<ul class="simple">
+<li>César Rodríguez &lt;<a class="reference external" href="mailto:cesar.rodriguez&#64;lipn.univ-paris13.fr">cesar.rodriguez&#64;lipn.univ-paris13.fr</a>&gt;</li>
+<li>Course web page: <a class="reference external" href="http://lipn.univ-paris13.fr/~rodriguez/teach/unix/2014-15/">http://lipn.univ-paris13.fr/~rodriguez/teach/unix/2014-15/</a></li>
+</ul>
+</div>
+<div class="section" id="syllabus">
+<h2>0.2&nbsp;&nbsp;&nbsp;Syllabus</h2>
+<ul class="simple">
+<li>Unix file system</li>
+<li>Processes</li>
+<li>Network configuration, printers</li>
+<li>Stream editing</li>
+<li>Text editors</li>
+<li>System start-up</li>
+<li>Users and groups</li>
+<li>Shell scripting</li>
+</ul>
+</div>
+</div>
+<div class="section" id="introduction">
+<h1>1&nbsp;&nbsp;&nbsp;Introduction</h1>
+<ul class="simple">
+<li>History of Unix<ul>
+<li><cite>Multics</cite>: high availability and scalability;
+many novel ideas, not a commercial success</li>
+<li>Ken Thompson writes <cite>Unix</cite> in assembler for the PDP7; Dennis Ritchie
+writes the first C compiler; they rewrite Unix in C, beginning of
+portability and expansion</li>
+<li>80s: AT&amp;T version (System V), and Berkeley version (BSD); industrial
+adoption and new branches</li>
+<li>1988: first POSIX standard</li>
+<li>1991: Linus Torvalds writes Linux and releases it as free software</li>
+<li>Many Linux distributions appear</li>
+</ul>
+</li>
+<li>The shell<ul>
+<li>Shells are are regular, ordinary processes</li>
+<li>Internal and external commands; the command <tt class="docutils literal">type</tt></li>
+<li>Commands <tt class="docutils literal">history</tt>, <tt class="docutils literal">alias</tt>.</li>
+<li>Shell history and configuration files</li>
+</ul>
+</li>
+<li>Getting help<ul>
+<li><tt class="docutils literal">help</tt></li>
+<li>man pages, <tt class="docutils literal">man <span class="pre">-k</span></tt>, see also section 5.3 of the tutorial</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="file-system-i">
+<h1>2&nbsp;&nbsp;&nbsp;File System (i)</h1>
+<ul class="simple">
+<li>Absolute and relative paths</li>
+<li><tt class="docutils literal">.</tt> and <tt class="docutils literal">..</tt></li>
+<li>Physical organization of a typical Unix file system<ul>
+<li>Superblock<ul>
+<li>Magic number</li>
+<li>Inode number of the <tt class="docutils literal">/</tt> directory</li>
+</ul>
+</li>
+<li>Inode table, where each inode contains<ul>
+<li>Ownership</li>
+<li>Access rights</li>
+<li>Timestamps</li>
+<li>File size</li>
+<li>Link count</li>
+<li>Pointers to disk blocks</li>
+</ul>
+</li>
+<li>After that, all data blocks</li>
+<li>Directories are just special files that store a table of pairs
+(inode, filename)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="file-system-ii">
+<h1>3&nbsp;&nbsp;&nbsp;File System (ii)</h1>
+<ul class="simple">
+<li><tt class="docutils literal">hexdump</tt> and <tt class="docutils literal">bzip</tt></li>
+<li>Basics of regular expressions</li>
+</ul>
+</div>
+<div class="section" id="processes">
+<h1>4&nbsp;&nbsp;&nbsp;Processes</h1>
+<ul class="simple">
+<li>File descriptor table; <tt class="docutils literal">/proc/PID/fd/</tt></li>
+<li>Shell redirections</li>
+<li>Shell pipelines</li>
+<li>Environment; <tt class="docutils literal">set</tt>, <tt class="docutils literal">env</tt></li>
+<li>Return code; variable <tt class="docutils literal">$?</tt></li>
+<li>Setuid and setgid bits for executables and directories</li>
+<li>Command <tt class="docutils literal">ps</tt>, options</li>
+</ul>
+</div>
+<div class="section" id="network-printers-stream-editing">
+<h1>5&nbsp;&nbsp;&nbsp;Network, Printers, Stream Editing</h1>
+<ul class="simple">
+<li>netstat -tuanlp</li>
+<li>Priviledged ports</li>
+<li>ssh -XDv</li>
+<li>netcat -v www.google.fr 80</li>
+<li>netcat -vnl -p 1234</li>
+</ul>
+<div class="section" id="configuring-the-network-interfaces">
+<h2>5.1&nbsp;&nbsp;&nbsp;Configuring the network interfaces</h2>
+<ul class="simple">
+<li>ifconfig -a</li>
+<li>ifconfig eth0 [up|down]</li>
+<li>ifconfig eth0 192.168.0.2 netmask 255.0.0.0</li>
+</ul>
+</div>
+<div class="section" id="ip-route-table">
+<h2>5.2&nbsp;&nbsp;&nbsp;IP route table</h2>
+<ul class="simple">
+<li>route -n</li>
+<li>route add default gw 192.168.1.1 eth0</li>
+</ul>
+</div>
+<div class="section" id="dns">
+<h2>5.3&nbsp;&nbsp;&nbsp;DNS</h2>
+<ul class="simple">
+<li>dig</li>
+<li>/etc/resolv.conf</li>
+</ul>
+</div>
+<div class="section" id="dhcp-arp">
+<h2>5.4&nbsp;&nbsp;&nbsp;DHCP, ARP</h2>
+<ul class="simple">
+<li>dhclient eth0</li>
+<li>arp -na</li>
+</ul>
+</div>
+<div class="section" id="debian-package-managers">
+<h2>5.5&nbsp;&nbsp;&nbsp;Debian package managers</h2>
+<ul class="simple">
+<li>dpkg -l</li>
+<li>dpkg -L wget</li>
+<li>apt-cache search tcp</li>
+<li>apt-cache show netcat</li>
+<li>apt-get install netcat</li>
+<li>apt-get uninstall python3</li>
+</ul>
+</div>
+</div>
+<div class="section" id="text-editors">
+<h1>6&nbsp;&nbsp;&nbsp;Text Editors</h1>
+<ul class="simple">
+<li>Basic notions of vi</li>
+</ul>
+</div>
+<div class="section" id="system-administration">
+<h1>7&nbsp;&nbsp;&nbsp;System Administration</h1>
+<ul>
+<li><p class="first">Sections of the manual:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head"><p class="first last">Section</p>
+</th>
+<th class="head"><p class="first last">Description</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><p class="first last">1</p>
+</td>
+<td><p class="first last">General commands</p>
+</td>
+</tr>
+<tr><td><p class="first last">2</p>
+</td>
+<td><p class="first last">System calls</p>
+</td>
+</tr>
+<tr><td><p class="first last">3</p>
+</td>
+<td><p class="first last">Library functions, covering in particular the C standard library</p>
+</td>
+</tr>
+<tr><td><p class="first last">4</p>
+</td>
+<td><p class="first last">Special files (usually devices, those found in /dev) and drivers</p>
+</td>
+</tr>
+<tr><td><p class="first last">5</p>
+</td>
+<td><p class="first last">File formats and conventions</p>
+</td>
+</tr>
+<tr><td><p class="first last">6</p>
+</td>
+<td><p class="first last">Games and screensavers</p>
+</td>
+</tr>
+<tr><td><p class="first last">7</p>
+</td>
+<td><p class="first last">Conventions, Protocols, and Miscellanea</p>
+</td>
+</tr>
+<tr><td><p class="first last">8</p>
+</td>
+<td><p class="first last">Administration and priviledged commands and daemons</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference external" href="http://linux.die.net/man/">http://linux.die.net/man/</a></p>
+</li>
+<li><p class="first">System start-up</p>
+</li>
+<li><p class="first">users, groups, adduser, group, usermod</p>
+</li>
+</ul>
+</div>
+<div class="section" id="shell-scripting">
+<h1>8&nbsp;&nbsp;&nbsp;Shell scripting</h1>
+<ul class="simple">
+<li>Many shells, we will focus on the Bash shell</li>
+<li>Shell variables and environment variables</li>
+<li>Command line substitution</li>
+<li>true, false, test, expr</li>
+<li>if, while, case</li>
+<li>set options</li>
+<li>signals</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

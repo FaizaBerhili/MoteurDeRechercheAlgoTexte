@@ -1,0 +1,99 @@
+
+
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CoGITARe ANRJCJC</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <meta http-equiv="Content-Language" content=fr />
+  </head>
+
+  <body>       
+    <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+	  <li class="active"><a href="#">Index</a></li>
+	  <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"> Membres et associés <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+	         <li><a href=membres.php?lang=fr>liste des membres</a></li>
+	         <li><a href=../?lang=fr>Flavien Breuvart</a></li>
+             <li><a href=http://www.jaime-arias.fr/pages/talks.html>Jaime Arias</a></li>
+             <li><a href=https://www.di.ens.fr/~feret/>Jérôme Feret</a></li>
+             <li><a href=https://lipn.univ-paris13.fr/~manzonetto>Giulio Manzonetto</a></li>
+             <li><a href=https://lipn.univ-paris13.fr/~mazza>Damiano Mazza</a></li>
+             <li><a href=http://yann.regis-gianas.org>Yann Régis-Gianas</a></li>
+             <li><a href=https://www.seiller.org/>Thomas Seiller</a></li>
+             <li><a href=https://lipn.univ-paris13.fr/~loddo>Jean-Vincent Loddo</a></li>
+             <li><a href=https://lipn.univ-paris13.fr/~mayero>Micaela Mayero</a></li>
+            </ul>
+	  <li><a href=stages.php?lang=fr>Positions</a></li>
+	  <li><a href=../articles/Cogitare.pdf?lang=fr>Proposition</a></li>
+	  <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"> Évènements <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+    	     <li><a href=kickoff.php?lang=fr>Kickoff</a></li>
+	         <li><a href=journee_inferencing_subtypes.php?lang=fr>journee1</a></li>
+           </ul>
+	  </li>
+	  <li>
+	    <a href=?lang=uk><img src=../data/uk.png alt=lang:uk style="width:25px;height:20px;"></a>
+	  </li>
+    </ul>
+    </nav>
+
+
+
+
+
+<div class="publications">
+	<h2> CoGITARe : "Combining Graded and Intersection Types for the Analyses of Resources"</h2>
+    <p><B>Funded by ANRJCJC</B>  </br></p>
+    <p><B>Period of activity : 2019-2022 </B></p>
+	<p><B> Official and associated members :</B></br> Jaime Arias, Flavien Breuvart, Jérôme Féret, Dan Ghica, Jean-Vincent Loddo, Giulio Manzonetto, Damilano Mazza, Yann Régis-Gianas, Thomas Seiller</p>
+	<B> Summary :</B></br>
+	<p>Type systems are used to automatically check security properties of large programs. This project will extend typing methodology to a large panel of properties currently unreachable by state-of-the-art techniques, enabling in particular the analysis of {\bf quantitative properties of programs}.</p>
+
+	<p> We will develop a way to keep track of the extensional information inside types in order to perform the whole static analysis at the level of types. For this purpose, we will combine two (re)emerging type systems, namely graded types and intersection type systems, with the well established techniques from the field of abstract interpretation such as widening. </p>
+
+	<p> Graded type systems formally embed a first order structure within types, while intersection types will help to circumvent the unconditional non-compositionality of fine grained resource analyses. This is how we plan to tackle the long running problem of applying abstract interpretation result in functional programming.</p>
+</div>
+
+
+<div class="publications">
+	<h2> News </h2>
+	<UL TYPE=square>
+    <LI> 01 March 2019: Oficial start of the project
+    <LI> 28 March 2019: Kick off Meating
+    </UL>
+ </div>
+
+
+
+<div class="publications">
+<img src="../data/ANR_CoGITARe.svg" alt="funded by ANR" style="width:170px;height:150px;">
+<img src="../data/LIPN.png" alt="LIPN" style="width:210px;height:135px;">
+<img src="../data/P13.png" alt="P13" style="width:280px;height:130px;">
+<img src="../data/ANR.jpg" alt="ANR" style="width:260px;height:140px;">
+ </div>
+                                   
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
+    
