@@ -63,8 +63,8 @@
     <div class="container">
         <div id="div-search-bar">
             <h1 id="browser-name" class="text-center"><span id="letter-J">J</span><span id="letter-U">u</span><span id="letter-A">A</span><span id="letter-M1">m</span><span id="letter-E">E</span><span id="letter-M2">m</span></h1>
-		    <form  id="search-form" action="{{ url_for('search') }}" method="POST" class="form-group" onSubmit="return valider(this)">
-                <input id="search-bar" class="form-control" type="search" placeholder="Rechercher..." aria-label="Search" name="search_bar"/>
+		    <form  id="search-form" action="{{ url_for('search') }}" method="GET" class="form-group" onSubmit="return valider(this)">
+                <input id="search-bar" class="form-control" type="search" placeholder="Rechercher..." aria-label="Search" name="recherche"/>
                 <button id="search-button" class="form-control" type="submit"><i class=" fa fa-search"></i></button>
             </form>
         </div>
