@@ -11,6 +11,7 @@ Le but de ce projet est de réaliser un navigateur.
 
 - Le dossier /src contient le code principal du navigateur.  
 - Le dossier /test contient le code de test pour les différentes fonctionnalités du navigateur.  
+(Il est préférable d'aller dans ce dossier pour effectuer les tests. Tout y est expliqué)
 - Le dossier /doc contient la documentation au projet.  
 
 Le navigateur Web utilise le framework Flask afin d'allier le python et le HTML avec un système de templates très simple d'utilisation.  
