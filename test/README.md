@@ -28,7 +28,7 @@ pip3 install numpy
 - Démarrer un Terminal   
 - Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_test/test/) 
 - Lancer (une fois pour toute) la commande : python supprimeSimilaireTEST.py (ou python3 supprimeSimilaireTEST.py) pour supprimer les pages trop similaires
-- Lancer la commande : python serverWeb_test.py  
+- Lancer la commande : python serverWeb_test.py (ou python3 serverWeb_test.py)
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
 (Le lancement du serveur peut être long dû à la création de l'index inversé de milliers de fichier)  
 - Ouvrer votre navigateur et entrer http://localhost:8090 ou localhost:8090  
