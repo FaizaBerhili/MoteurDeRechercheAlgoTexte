@@ -31,8 +31,11 @@ class inverted_index:
     #Fonction de construction de l'index inversé
     def build(self, documents):
         for file_name, file_content in documents.items():
-            self.add(file_name,file_content)
+            self.add(file_name,file_content);
+            print("Fichier", file_name ,"traité pour l'indexation")
+        print("\nTri des fichiers (trie décroissant des scores des fichiers en fonction du mot indexe) en cours...")
         self.sort(documents)
+       	print("\nTri des fichiers terminé");
 
     #Fonction d'ajout du contenu d'un fichier spliter dans l'index inversé
     def add(self, file_name, file_content):
@@ -44,6 +47,7 @@ class inverted_index:
     #Fonction de recherche
     def search(self, request1):
         list_file_score = []
+        #Prend les mots similaires qui sont déjà dans le dico par exemple : paris et pris sont proches
         request=motSimilaire.listeSimilaire(request1,self.index)
         # Pour chaque mots de la requete on cherche les fichiers où sont présent ces mots
         for word in request:
@@ -97,7 +101,8 @@ class inverted_index:
             # L'index est devient word [('file_name' : score) , ...]
             # On a ainsi un index où les fichiers sont triés par ordre décroissant en fonction du mot et des autres fichiers 
             self.index[word] = list_word
-            
+            #print(self.index[word])
+     
     #Fonction permettant de formater les documents 
     def format_file_content(self,file_content, stop_words):
         words = file_content.split()
