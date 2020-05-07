@@ -7,14 +7,18 @@ from bs4 import BeautifulSoup
 # Initialize the Flask application
 app = Flask(__name__, template_folder='.')
 #On charge les documents
+print("Nettoyage des fichiers en cours...\n")
 documents = cleaner_test.loadURL("./pages_web_test")
 #On transforme les documents en un dictionnaire {'file_name':'file_content'}
 documents_cleaner = cleaner_test.convert_url(documents)
+print("Nettoyage des fichiers terminé.\n")
 #On crée un index inversé
 stop_words = []
+print("Création de l'index inversé en cours...\n")
 index_inverse = ii.inverted_index(stop_words)
 #On remplit l'index inversé avec les documents fournis
 index_inverse.build(documents_cleaner)
+print("Création de l'index inversé terminé.\n")
 
 #Route principale : la page d'accueil
 @app.route('/')
