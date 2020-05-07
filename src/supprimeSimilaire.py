@@ -5,7 +5,7 @@ import numpy as np
 import re
 import math
 from collections import Counter
-import cleaner_test
+import cleaner
 import textdistance
 import shutil
 import os
@@ -14,7 +14,7 @@ import os
 
 
 def supressionPage(dico):
-	fichiers = os.listdir('./pages_web_test/');
+	fichiers = os.listdir('./pages_web/');
 	n = len(fichiers);
 	compteur = 0 ;
 	for fichier in fichiers:
@@ -31,7 +31,7 @@ def supressionPage(dico):
 				dico.pop(f); #supprime clé nom du fichier du dico
 		except KeyError:
 			print("pas de clé trouvé donc suppression de la page")
-			os.remove('./pages_web_test/' + fichier);
+			os.remove('./pages_web/' + fichier);
 
 
 
