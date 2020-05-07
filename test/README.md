@@ -26,7 +26,7 @@ pip3 install numpy
 2. Puis :   
 
 - Démarrer un Terminal   
-- Aller dans le repertoire /src qui contient les fichiers (cd le_chemin_avant_test/test/) 
+- Aller dans le repertoire /test qui contient les fichiers
 - Lancer (une fois pour toute) la commande : python supprimeSimilaireTEST.py (ou python3 supprimeSimilaireTEST.py) pour supprimer les pages trop similaires
 - Lancer la commande : python serverWeb_test.py (ou python3 serverWeb_test.py)
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
