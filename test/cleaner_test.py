@@ -28,6 +28,7 @@ def convert_url(urls):
 
 # Fonction permettant de nettoyer le contenue d'une page
 def cleaner_link(link):
+    print("Netoyage de",link)
     try:
         #Lecture du fichier
         f = codecs.open("./pages_web_test/"+link, "r",encoding="UTF-8")
