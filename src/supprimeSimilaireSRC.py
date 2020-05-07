@@ -5,7 +5,7 @@ import numpy as np
 import re
 import math
 from collections import Counter
-import cleaner_test
+import cleaner
 import textdistance
 import shutil
 import os
