@@ -9,7 +9,7 @@ import cleaner
 import pageSimilaire as pS
 
 documents = cleaner.loadURL("./pages_web");
-documents_cleaner = cleaner_test.convert_url(documents);
+documents_cleaner = cleaner.convert_url(documents);
 
 dico = pS.dicoSimilaire(documents_cleaner);
 
