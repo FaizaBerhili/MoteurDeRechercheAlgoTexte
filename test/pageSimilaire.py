@@ -22,10 +22,11 @@ def dicoSimilaire(dicoDocuments):
 		compteur = compteur + 1
 		print(str(compteur)," / ",taille,"\n")
 		for lien2,texte2 in dicoDocuments.items():
+		
 			if(lien1 != lien2):
 				d = textdistance.hamming.similarity(texte1,texte2)
+				s = dicoSim.setdefault(lien1,set())				
 				if(d>300): # si leur similarité est supérieur à 300 on ajoute la page comme valeur dans le set
-					s = dicoSim.setdefault(lien1,set())
 					s.add(lien2)
 	return (dicoSim)
 	

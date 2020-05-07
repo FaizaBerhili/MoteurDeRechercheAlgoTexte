@@ -13,6 +13,7 @@ documents_cleaner = cleaner_test.convert_url(documents);
 
 dico = pS.dicoSimilaire(documents_cleaner);
 
+print(dico)
 
 for lien1,liens2 in dico.items():	
 	print("la page \"" , lien1 , "\"");
