@@ -13,8 +13,14 @@ import textdistance
 #et les valeurs sont un set des liens des pages avec lesquelles ils sont similaires
 
 def dicoSimilaire(dicoDocuments):
+	print("creation du dico des pages similaires");
 	dicoSim = dict()
+	compteur = 0
+	taille = len(dicoDocuments.items());
+	print("traitement pages similaires")
 	for lien1,texte1 in dicoDocuments.items():
+		compteur = compteur + 1
+		print(str(compteur)," / ",taille,"\n")
 		for lien2,texte2 in dicoDocuments.items():
 			if(lien1 != lien2):
 				d = textdistance.hamming.similarity(texte1,texte2)

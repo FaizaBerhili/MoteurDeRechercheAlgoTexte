@@ -1,5 +1,6 @@
 #Emiliano BOUSSAC
 
+import sys
 import numpy as np
 import re
 import math
@@ -12,16 +13,16 @@ import supprimeSimilaire as supSim
 from pageSimilaireTEST import dico
 
 
-fichiers = os.listdir('./pages_web_test/')
-print("nombre fichiers avant suppresssion")
-print(len(fichiers))
+fichiers = os.listdir('./pages_web_test/');
+print("nombre fichiers avant suppresssion");
+print(len(fichiers));
 
 
 
-supSim.supressionPage(dico)
+supSim.supressionPage(dico);
 
-fichiers = os.listdir('./pages_web_test/')
-print("nombre fichiers apres suppresssion")
-print(len(fichiers))
+fichiers = os.listdir('./pages_web_test/');
+print("nombre fichiers apres suppresssion");
+print(len(fichiers));
 
 
