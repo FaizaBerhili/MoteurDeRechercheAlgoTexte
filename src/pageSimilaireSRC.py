@@ -8,8 +8,8 @@ from collections import Counter
 import cleaner
 import pageSimilaire as pS
 
-documents = cleaner_test.loadURL("./pages_web");
-documents_cleaner = cleaner_test.convert_url(documents);
+documents = cleaner.loadURL("./pages_web");
+documents_cleaner = cleaner.convert_url(documents);
 
 dico = pS.dicoSimilaire(documents_cleaner);
 
