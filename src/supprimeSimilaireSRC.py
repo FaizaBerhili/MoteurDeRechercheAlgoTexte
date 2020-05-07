@@ -13,7 +13,7 @@ import supprimeSimilaire as supSim
 from pageSimilaireSRC import dico
 
 
-fichiers = os.listdir('./pages_web_test/');
+fichiers = os.listdir('./pages_web/');
 print("nombre fichiers avant suppresssion");
 print(len(fichiers));
 
@@ -21,7 +21,7 @@ print(len(fichiers));
 
 supSim.supressionPage(dico);
 
-fichiers = os.listdir('./pages_web_test/');
+fichiers = os.listdir('./pages_web/');
 print("nombre fichiers apres suppresssion");
 print(len(fichiers));
 
