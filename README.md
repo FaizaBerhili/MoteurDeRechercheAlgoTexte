@@ -59,3 +59,5 @@ pip3 install numpy
 	- Si une recherche NON VIDE est effectué, le navigateur lance une recherche et renvoie ses résultats dans une seconde page  
 	- Si vous faites une recherche avec des fautes d'othographes, vous aurez un affichage
 	- 10 résultats peuvent être affiché au maximum. Si la recherche n'a pas de résultat, le message "Aucun résultat." s'affichera  
+
+Remarque : Des affichages sont disponibles sur le terminal où est lancé le serveur afin d'avoir des informations sur les étapes en cours.
