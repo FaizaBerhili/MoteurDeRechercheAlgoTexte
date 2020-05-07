@@ -44,6 +44,7 @@ pip3 install numpy
 
 2. Puis :   
 
+- Cloner le projet
 - Démarrer un Terminal   
 - Aller dans le repertoire /src qui contient les fichiers 
 - Veuillez télécharger les pages Web à l'adresse suivante et les placer dans /src : https://lipn.univ-paris13.fr/~david/doc/pages_web.tgz
