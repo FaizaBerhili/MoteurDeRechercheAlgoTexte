@@ -19,7 +19,7 @@ Le navigateur Web utilise le framework Flask afin d'allier le python et le HTML 
 ## Exécution  
 
 On recommande d'effectuer les tests de ce projet à partir du fichier /test où un README détaille l'exécution.   
-Ceci pour une raison simple : le nettoyage et l'indexation de milliers de pages prend beaucoup de temps.
+Ceci pour une raison simple : le nettoyage et l'indexation de milliers de pages prend beaucoup de temps et le doosier /test utilise une toute petite partie de l'ensemble des pages fournies.
 
 Pour exécuter le projet  
 
