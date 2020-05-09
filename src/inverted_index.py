@@ -105,7 +105,7 @@ class inverted_index:
         #request=motSimilaire.listeSimilaire(request_normalise,self.index)
         # Pour chaque mots de la requete on cherche les fichiers où sont présent ces mots
         #for word in request:
-        for word in request1:
+        for word in request_normalise:
             #Si le mot est dans l'index
             if word in self.index:
                 #On ajoute le couple (fichier, score) à la liste
