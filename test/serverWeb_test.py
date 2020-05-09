@@ -3,9 +3,14 @@ from flask import Flask, render_template, request, jsonify
 import inverted_index_test as ii
 import cleaner_test
 from bs4 import BeautifulSoup
+import time
+from time import strftime
+from time import gmtime
 
 # Initialize the Flask application
 app = Flask(__name__, template_folder='.')
+# Debut du decompte du temps
+start_time = time.time()
 #On charge les documents
 print("Nettoyage des fichiers en cours...\n")
 documents = cleaner_test.loadURL("./pages_web_test")
@@ -19,6 +24,8 @@ index_inverse = ii.inverted_index(stop_words)
 #On remplit l'index inversé avec les documents fournis
 index_inverse.build(documents_cleaner)
 print("Création de l'index inversé terminé.\n")
+# Affichage du temps d execution
+print("\nTemps d execution des fonctions avant le lancement du serveur : %s\n" % strftime('%Hh %Mm %Ss', gmtime((time.time() - start_time))))
 
 #Route principale : la page d'accueil
 @app.route('/')
