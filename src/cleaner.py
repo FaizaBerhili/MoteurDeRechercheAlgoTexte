@@ -4,6 +4,7 @@
 """
 
 #Importation des bibliotheques utiles
+import os
 from os import listdir
 from os.path import isfile, join
 import codecs
@@ -12,38 +13,51 @@ import string
 import unidecode
 from bs4 import BeautifulSoup
 import html
+import sys
+import progress_bar
 
-# Fonction permettant d'extraire dans une Liste les fichiers d'un repertoire
 def loadURL(repertoire):
+    """
+    Fonction permettant d'extraire une liste de fichier d'un repertoire
+    @params:
+        repertoire  - Required : Repertoire depuis lequel on veut extraire les fichiers
+    """
     URL = [f for f in listdir(repertoire) if isfile(join(repertoire, f))]
     return URL
 
-# Fonction permettant d'avoir les documents sous forme de dictionnaire {'file_name':'file_content'}
-# Ici le file_content est normalise et nettoye
 def convert_url(urls):
+    """
+    Fonction permettant d'avoir les documents sous forme de dictionnaire {'file_name':'file_content'}
+	Ici le file_content est normalisé et nettoyé
+	On affiche en plus la progression des fichiers nettoyés
+    @params:
+        urls  - Required : Les urls des fichiers
+    """
     res = dict()
+    compteur = 1
+    taille = len(urls)
     for url in urls:
-        res[url] = cleaner_link(url)
+    	#On associer à l'url son contenu nettoyé
+        res[url] = cleaner_link(url); 
+        progress_bar.print_progress_bar(compteur, taille, prefix = 'Nettoyage des fichier : ' + str(compteur) +  '/' + str(taille), suffix = '')
+        compteur = compteur + 1
     return res
 
-# Fonction permettant de nettoyer le contenue d'une page
 def cleaner_link(link):
-    print("Netoyage de",link)
+    """
+    Fonction permettant de nettoyer le contenue d'une page
+	On va enlever tous les contenus inutiles balises, style, ponctuations ...
+    @params:
+        link  - Required : Fichier qu'on veut nettoyer
+    """
     try:
         #Lecture du fichier
         f = codecs.open("./pages_web/"+link, "r",encoding="UTF-8")
         content = f.read()
 
-        #On supprime les balises script et style ainsi que leurs contenus
-        soup = BeautifulSoup(content,"html.parser")
-        for p in soup.find_all("script"):
-            p.replace_with(" ")
-        content = str(soup)
-
-        soup = BeautifulSoup(content,"html.parser")
-        for p in soup.find_all("style"):
-            p.replace_with(" ")
-        content = str(soup)
+        #On supprime les balises styles et script avec leurs contenus
+        content = re.sub(r'<script[^>]*>.(?s)*</script>', ' ', content)
+        content = re.sub(r'<style[^>]*>.(?s)*</style>', ' ', content)
 
         #On supprimes les balises et leurs attributs (différenciation selon inline/block)
         content = re.sub(r'<[/]?span[^>]*>', '', content)
@@ -57,10 +71,11 @@ def cleaner_link(link):
         content = re.sub(r'<[/]?small[^>]*>', '', content)
         content = re.sub(r'<[^>]*>', ' ', content)
 
-        #On enleve les accents et enleve les encodages 
+        #On enlève les accents et les encodages 
         content = unidecode.unidecode(content)
 
-        #On enleve les éléments de la forme &... qui code des caractères qui n'ont pas été décodé en ascii
+        #On enlève les éléments de la forme &... qui code des caractères qui n'ont pas été décodé en ascii
+        # S'il on été décodé en ASCII c'est que leur code ASCII est dans la table ASCII
         content = re.sub(r"&[^;]*;",' ', content)
 
         #On remplace des signes de ponctuation par un espace et on met le texte en un paragraphe
