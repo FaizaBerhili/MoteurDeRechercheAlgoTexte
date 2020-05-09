@@ -46,8 +46,8 @@ pip3 install numpy
 - Aller dans le repertoire /src qui contient les fichiers 
 - Veuillez télécharger les pages Web à l'adresse suivante et les placer dans /src : https://lipn.univ-paris13.fr/~david/doc/pages_web.tgz
 - Lancer (une fois pour toute) la commande : python3 supprimeSimilaireSRC.py (ou python supprimeSimilaireSRC.py)  pour supprimer les pages trop similaires à partir de /src sinon utiliser la commande python3 supprimeSimilaireTEST.py (ou python supprimeSimilaireTEST.py)  à partir de /test
-- Lancer la commande : python serverWeb.py (ou python3 serverWeb.py) 
-	-Vérifier bien qu'aucun programme ne tourne sur le port 8090 avant de le lancer grâce à la commande : **netstat -ano | find ":8090"**
+- Lancer la commande : python serverWeb.py (ou python3 serverWeb.py)   
+	- Vérifier bien qu'aucun programme ne tourne sur le port 8090 avant de le lancer grâce à la commande : **netstat -ano | find ":8090"**
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
 (Le lancement du serveur peut être long dû à la création de l'index inversé et le nettoyage de milliers de fichier (3 à 4 minutes))
 - Ouvrer votre navigateur et entrer **http://localhost:8090** ou **localhost:8090**  
