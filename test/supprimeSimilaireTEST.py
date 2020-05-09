@@ -14,15 +14,13 @@ from pageSimilaireTEST import dico
 
 
 fichiers = os.listdir('./pages_web_test/');
-print("nombre fichiers avant suppresssion");
+print("Nombre fichiers avant suppresssion : ");
 print(len(fichiers));
-
-
 
 supSim.supressionPage(dico);
 
 fichiers = os.listdir('./pages_web_test/');
-print("nombre fichiers apres suppresssion");
+print("Nombre fichiers apres suppresssion : ");
 print(len(fichiers));
 
 
