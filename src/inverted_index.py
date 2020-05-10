@@ -106,6 +106,7 @@ class inverted_index:
             word = word.replace("–", "")
             request_normalise.append(word)
         #On ajoute à la liste de requete les mots qui sont proche et dans le dico ex : algorithmic et algorithmie
+        #On appelle la fonction de la partie jaune qui recherche les mots similaires
         #request=motSimilaire.listeSimilaire(request_normalise,self.index)
         # Pour chaque mots de la requete on cherche les fichiers où sont présent ces mots
         #for word in request:
