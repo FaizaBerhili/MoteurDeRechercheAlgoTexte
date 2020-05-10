@@ -49,7 +49,7 @@ pip3 install numpy
 - Lancer la commande : python serverWeb.py (ou python3 serverWeb.py)   
 	- Vérifier bien qu'aucun programme ne tourne sur le port 8090 avant de le lancer grâce à la commande : **netstat -ano | find ":8090"**
 - Le server se lance avec le message : "Running on http://localhost:8090/" (si vous êtes en local)  
-(Le lancement du serveur peut être long dû à la création de l'index inversé et le nettoyage de milliers de fichier (3 à 4 minutes))
+(Le lancement du serveur peut être long dû à la création de l'index inversé et le nettoyage de milliers de fichier (1 à 4 minutes))
 - Ouvrer votre navigateur et entrer **http://localhost:8090** ou **localhost:8090**  
 - Le navigateur JuAmEm se lance  
 	- (Si vous avez le message "La connexion a échoué", regarder si votre serveur Web est bien lancé dans le terminal)  
