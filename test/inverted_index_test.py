@@ -16,6 +16,8 @@ from bs4 import BeautifulSoup
 import motSimilaire
 import progress_bar_test
 import cleaner_test
+from time import strftime
+from time import gmtime
 
 #Class de l'index inversé
 class inverted_index:
@@ -92,6 +94,7 @@ class inverted_index:
         """
         list_file_score = []
         request_normalise = []
+        start_time = time.time()
         #On traite les mots de la requete pour enlever la ponctuation, la casse et les accents
         for word in request1:
             #On traite les mots de la requete pour se formaliser au format des mots de notre index
@@ -133,6 +136,7 @@ class inverted_index:
             list_file_sorted_res.append((file,title))
         #print(list_file_sorted[0:10])
         print("\nRésultats pour la requete", request , ":", list_file_sorted_res[0:10])
+        print("\nTemps de la recherche : %s\n" % strftime('%Hh %Mm %Ss', gmtime((time.time() - start_time))))
         return list_file_sorted_res[0:10]
 
     def sort(self, documents_cleaner):
