@@ -15,6 +15,9 @@ import string
 from bs4 import BeautifulSoup
 import motSimilaire
 import progress_bar
+from time import strftime
+from time import gmtime
+
 
 #Class de l'index inversé
 class inverted_index:
@@ -91,6 +94,7 @@ class inverted_index:
         """
         list_file_score = []
         request_normalise = []
+        start_time = time.time()
         #On traite les mots de la requete pour enlever la ponctuation, la casse et les accents pour coller au mot de l'index
         for word in request1:
             #On traite les mots de la requete pour se formaliser au format des mots de notre index
@@ -102,7 +106,6 @@ class inverted_index:
             word = word.replace("–", "")
             request_normalise.append(word)
         #On ajoute à la liste de requete les mots qui sont proche et dans le dico ex : algorithmic et algorithmie
-        #La ligne suivante en commentaire fait partie de la partie jaune 
         #request=motSimilaire.listeSimilaire(request_normalise,self.index)
         # Pour chaque mots de la requete on cherche les fichiers où sont présent ces mots
         #for word in request:
@@ -134,6 +137,7 @@ class inverted_index:
             list_file_sorted_res.append((file,title))
         #print(list_file_sorted[0:10])
         #print("\nRésultats pour la requete", request1 , ":", list_file_sorted_res[0:10])
+        print("\nTemps de la recherche : %s\n" % strftime('%Hh %Mm %Ss', gmtime((time.time() - start_time))))
         return list_file_sorted_res[0:10]
 
     def sort(self, documents_cleaner):
